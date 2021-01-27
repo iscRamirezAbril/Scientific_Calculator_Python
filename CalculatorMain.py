@@ -37,6 +37,7 @@ if Option == "a":
     print("   4. Division")
     print("   5. Square Root")
     print("   6. Cube Root")
+    print("   7. Return")
     # If the opiton selected is "b"
 elif Option == "b":
     os.system("cls") # Clear the window
@@ -49,6 +50,7 @@ elif Option == "b":
     print("   6. Factorial")
     print("   7. Logarithm")
     print("   8. Natural logarithm")
+    print("   9. Return")
     # If the opiton selected is "c"
 elif Option == "c":
     os.system("cls") # Clear the window
@@ -56,6 +58,7 @@ elif Option == "c":
     print("   A) Basic Trigonometric Functions")
     print("   B) Inverse Trigonometric Functions")
     print("   C) Hiperbolic Trigonometric Functions")
+    print("   D) Return")
     
     Option = input("\nWich option do you chose? ")
 
@@ -72,6 +75,7 @@ elif Option == "c":
         print("   4. Secant [sec(x)]")
         print("   5. Cosecant [csc(x)]")
         print("   6. Cotangent [cot(x)]")
+        print("   7. Return")
         # If the opiton selected is "B"
     elif Option == "B":
         os.system("cls") # Clear the window
@@ -79,6 +83,7 @@ elif Option == "c":
         print("   1. Arcsin(x)")
         print("   2. Arccos(x)")
         print("   3. Arctan(x)")
+        print("   4. Return")
         # If the opiton selected is "C"
     elif Option == "C":
         os.system("cls") # Clear the window
@@ -86,6 +91,7 @@ elif Option == "c":
         print("   1. sinh(x)")
         print("   2. cosh(x)")
         print("   3. tanh(x)")
+        print("   4. Return")
     # If the opiton selected is "d"
 elif Option == "d":
     Option = input("Are you sure you want to leave? [Yes / No]: ")
