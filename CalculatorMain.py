@@ -53,7 +53,7 @@ elif Option == "c":
     print("   B) Inverse Trigonometric Functions")
     print("   C) Hiperbolic Trigonometric Functions")
     
-    Option = input("\nWich option do you chose?")
+    Option = input("\nWich option do you chose? ")
 
     # -------------------------------------------- #
     # --- Menu for the Trigonometric Functions --- #
@@ -84,4 +84,4 @@ elif Option == "c":
         print("   3. tanh(x)")
     # If the opiton selected is "d"
 elif Option == "d":
-    print("Are you sure you want to leave?")
+    print("Are you sure you want to leave? [Yes / No]: ")
