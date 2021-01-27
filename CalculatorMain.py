@@ -1,4 +1,8 @@
+# <---------------------> #
+# <----- Libraries -----> #
+# <---------------------> #
 import os
+import sys
 
 # This is the library that will help with text color.
 from colorama import init, Fore
@@ -84,4 +88,6 @@ elif Option == "c":
         print("   3. tanh(x)")
     # If the opiton selected is "d"
 elif Option == "d":
-    print("Are you sure you want to leave? [Yes / No]: ")
+    Option = input("Are you sure you want to leave? [Yes / No]: ")
+    if Option == "Yes":
+        sys.exit("Thanks for using this program! Come back soon! :D") # Close the program
