@@ -4,9 +4,7 @@
 import os
 import sys
 import msvcrt
-
-# This is the library that will help with text color.
-from colorama import init, Fore
+from colorama import init, Fore # This is the library that will help with text color.
 init(autoreset = True)
 
 contador = 1
