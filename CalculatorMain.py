@@ -3,97 +3,93 @@
 # <---------------------> #
 import os
 import sys
+import msvcrt
 
 # This is the library that will help with text color.
 from colorama import init, Fore
-init(autoreset=True)
+init(autoreset = True)
 
-os.system("cls") # Clear the window
-print(Fore.CYAN + "=============================================================================================")
-print(Fore.CYAN + "                     --- Welcome to the Scientific Calculator! :D ---                        ")
-print(Fore.CYAN + "=============================================================================================")
+contador = 1
 
 # -------------------------- #
 # ----- Principal Menu ----- #
 # -------------------------- #
-print("This is the principal menu.")
-print("a. Basic Math Functions")
-print("b. More Math Functions")
-print("c. Trigonometric Functions")
-print("d. Exit")
-
-Option = input("\nPlease, select an option: ")
-
-# -------------------------- #
-# ----- Secondary Menu ----- #
-# -------------------------- #
-    # If the opiton selected is "a"
-if Option == "a": 
+while(contador == 1):
     os.system("cls") # Clear the window
-    print("a. Basic Math Functions")
-    print("   1. Addition")
-    print("   2. Subtraction")
-    print("   3. Multiplication")
-    print("   4. Division")
-    print("   5. Square Root")
-    print("   6. Cube Root")
-    print("   7. Return")
-    # If the opiton selected is "b"
-elif Option == "b":
-    os.system("cls") # Clear the window
-    print("b. Extra Math Functions")
-    print("   1. Square of a number")
-    print("   2. Cube of a number")
-    print("   3. Number raised to x power")
-    print("   4. Number raised to -1 power")
-    print("   5. Percentage of a number")
-    print("   6. Factorial")
-    print("   7. Logarithm")
-    print("   8. Natural logarithm")
-    print("   9. Return")
-    # If the opiton selected is "c"
-elif Option == "c":
-    os.system("cls") # Clear the window
-    print("c. Trigonometric Functions")
-    print("   A) Basic Trigonometric Functions")
-    print("   B) Inverse Trigonometric Functions")
-    print("   C) Hiperbolic Trigonometric Functions")
-    print("   D) Return")
-    
-    Option = input("\nWich option do you chose? ")
+    print(Fore.CYAN + "=============================================================================================")
+    print(Fore.CYAN + "                     --- Welcome to the Scientific Calculator! :D ---                        ")
+    print(Fore.CYAN + "=============================================================================================")
 
-    # -------------------------------------------- #
-    # --- Menu for the Trigonometric Functions --- #
-    # -------------------------------------------- #
-        # If the opiton selected is "A"
-    if Option == "A":
+    Option = int(input("This is the Principal Menu\n   1. Basic Math Functions\n   2. More Math Functions\n   3. Trigonometric Functions\n   4. Exit\n\nPlease, select an option: "))
+
+    if(Option == 1):
+        contador1 = 0
         os.system("cls") # Clear the window
-        print("A) Basic Trigonometric Functions")
-        print("   1. Sine [sin(x)]")
-        print("   2. Cosine [cos(x)]")
-        print("   3. Tangemt [tan(x)]")
-        print("   4. Secant [sec(x)]")
-        print("   5. Cosecant [csc(x)]")
-        print("   6. Cotangent [cot(x)]")
-        print("   7. Return")
-        # If the opiton selected is "B"
-    elif Option == "B":
+        while(contador1 == 0):
+            # -------------------------- #
+            # ----- Secondary Menu ----- #
+            # -------------------------- #
+            Option = int(input("A. BASIC MATH FUNCTIONS\n   1. Addition\n   2. Substraction\n   3. Multiplication\n   4. Division\n   5. Square Root\n   6. Cube Root\n   7. Return\n\n Please, select an option: "))
+            if Option == 1:
+                print("Pending...")
+            elif Option == 2:
+                print("Pending...")
+            elif Option == 3:
+                print("Pending...")
+            elif Option == 4:
+                print("Pending...")
+            elif Option == 5:
+                print("Pending...")
+            elif Option == 6:
+                print("Pending...")
+            elif Option == 7:
+                print("Press any Key to return to the Main Menu...")
+                msvcrt.getwch() # Press a key before returning to the main menu
+                break
         os.system("cls") # Clear the window
-        print("B) Inverse Trigonometric Functions")
-        print("   1. Arcsin(x)")
-        print("   2. Arccos(x)")
-        print("   3. Arctan(x)")
-        print("   4. Return")
-        # If the opiton selected is "C"
-    elif Option == "C":
+
+    elif(Option == 2):
+        contador1 = 0
         os.system("cls") # Clear the window
-        print("C) Hiperbolic Trigonometric Functions")
-        print("   1. sinh(x)")
-        print("   2. cosh(x)")
-        print("   3. tanh(x)")
-        print("   4. Return")
-    # If the opiton selected is "d"
-elif Option == "d":
-    Option = input("Are you sure you want to leave? [Yes / No]: ")
-    if Option == "Yes":
-        sys.exit("Thanks for using this program! Come back soon! :D") # Close the program
+        while(contador1 == 0):
+            # -------------------------- #
+            # ----- Secondary Menu ----- #
+            # -------------------------- #
+            Option = int(input("B. MORE MATH FUNCTIONS\n   1. Square of a numbre\n   2. Cube of a number\n   3. Number Raised to x power\n   4. Number Raised to -1 power\n   5. Percentage of a number\n   6. Factorial\n   7. Logarithm\n   8. Natural Logarithm\n   9. Return\n\n Please, select an option: "))
+            if Option == 1:
+                print("Pending...")
+            elif Option == 2:
+                print("Pending...")
+            elif Option == 3:
+                print("Pending...")
+            elif Option == 4:
+                print("Pending...")
+            elif Option == 5:
+                print("Pending...")
+            elif Option == 6:
+                print("Pending...")
+            elif Option == 7:
+                print("Peding...")
+            elif Option == 8:
+                print("Pending...")
+            elif Option == 9:
+                print("Press any Key to return to the Main Menu...")
+                msvcrt.getwch() # Press a key before returning to the main menu
+                break
+        os.system("cls") # Clear the window
+
+    elif(Option == 3):
+        contador2 == 0
+        os.system("cls") # Clear the window
+        while(contador2 == 0):
+            # -------------------------- #
+            # ----- Secondary Menu ----- #
+            # -------------------------- #
+        os.system("cls") # Clear the window
+        print("Entraste al corte 3")
+        contador = 1
+    elif(Option == 4):
+        sys.exit() # Close the window
+    else:
+        print("esa opcion no esta disponible")
+        contador = 1
