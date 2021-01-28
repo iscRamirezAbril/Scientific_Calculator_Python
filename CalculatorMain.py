@@ -26,10 +26,10 @@ while(contador == 1):
         contador1 = 0
         os.system("cls") # Clear the window
         while(contador1 == 0):
-            # -------------------------- #
-            # ----- Secondary Menu ----- #
-            # -------------------------- #
-            Option = int(input("A. BASIC MATH FUNCTIONS\n   1. Addition\n   2. Substraction\n   3. Multiplication\n   4. Division\n   5. Square Root\n   6. Cube Root\n   7. Return\n\n Please, select an option: "))
+            # ------------------------------------- #
+            # ----- Basic Math Functions Menu ----- #
+            # ------------------------------------- #
+            Option = int(input("A. BASIC MATH FUNCTIONS\n   1. Addition\n   2. Substraction\n   3. Multiplication\n   4. Division\n   5. Square Root\n   6. Cube Root\n   7. Return\n\nPlease, select an option: "))
             if Option == 1:
                 print("Pending...")
             elif Option == 2:
@@ -52,10 +52,10 @@ while(contador == 1):
         contador1 = 0
         os.system("cls") # Clear the window
         while(contador1 == 0):
-            # -------------------------- #
-            # ----- Secondary Menu ----- #
-            # -------------------------- #
-            Option = int(input("B. MORE MATH FUNCTIONS\n   1. Square of a numbre\n   2. Cube of a number\n   3. Number Raised to x power\n   4. Number Raised to -1 power\n   5. Percentage of a number\n   6. Factorial\n   7. Logarithm\n   8. Natural Logarithm\n   9. Return\n\n Please, select an option: "))
+            # ------------------------------------ #
+            # ----- More Math Functions Menu ----- #
+            # ------------------------------------ #
+            Option = int(input("B. MORE MATH FUNCTIONS\n   1. Square of a numbre\n   2. Cube of a number\n   3. Number Raised to x power\n   4. Number Raised to -1 power\n   5. Percentage of a number\n   6. Factorial\n   7. Logarithm\n   8. Natural Logarithm\n   9. Return\n\nPlease, select an option: "))
             if Option == 1:
                 print("Pending...")
             elif Option == 2:
@@ -79,17 +79,30 @@ while(contador == 1):
         os.system("cls") # Clear the window
 
     elif(Option == 3):
-        contador2 == 0
+        contador1 == 0
         os.system("cls") # Clear the window
-        while(contador2 == 0):
-            # -------------------------- #
-            # ----- Secondary Menu ----- #
-            # -------------------------- #
+        while(contador1 == 0):
+            # ---------------------------------------- #
+            # ----- Trigonometric Functions Menu ----- #
+            # ---------------------------------------- #
+            Option = int(input("C. TRIGONOMETRIC FUNCTIONS\n   1. Basic Trigonometric Functions\n   2. Inverse Trigonometric Functions\n   3. Hiperbolic Trigonometric Functions\n   4. Return\n\nPlease, select an option: "))
+            if Option == 1:
+                print("Pending...")
+            elif Option == 2:
+                print("Pending...")
+            elif Option == 3:
+                print("Pending...")
+            elif Option == 4:
+                print("Press any Key to return to the Main Menu...")
+                msvcrt.getwch() # Press a key before returning to the main menu
+                break
         os.system("cls") # Clear the window
-        print("Entraste al corte 3")
-        contador = 1
     elif(Option == 4):
+        print("Thanks for using this program! See ya soon! n.n/")
+        msvcrt.getwch() # Press a key to close the program
         sys.exit() # Close the window
     else:
-        print("esa opcion no esta disponible")
+        print("Please, select a valid option...")
+        print("Press any key to try again :)")
+        msvcrt.getwch() # Press a key before returning to the main menu
         contador = 1
