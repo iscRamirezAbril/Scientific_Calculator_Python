@@ -90,9 +90,9 @@ while(contador == 1):
                 contador2 = 0
                 os.system("cls") # Clear the window
                 while(contador2 == 0):
-                    # ---------------------------------------- #
-                    # ----- Trigonometric Functions Menu ----- #
-                    # ---------------------------------------- #
+                    # ---------------------------------------------- #
+                    # ----- Basic Trigonometric Functions Menu ----- #
+                    # ---------------------------------------------- #
                     Option = int(input("I. BASIC TRIGONOMETRIC FUNCTIONS\n   1. Sine [sin(x)]\n   2. Cosine [cos(x)]\n   3. Tangent [tan(x)]\n   4. Secant [sec(x)]\n   5. Cosecant [csc(x)]\n   6. Cotangent [cot[x]]\n   7. Return\n\nPlease, select an option: "))
                     if Option == 1:
                         print("Pending...")
