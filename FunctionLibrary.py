@@ -8,7 +8,7 @@ class Addition():
     # Class method
     def AddOp(self, Num1, Num2):
         AddResult = (Num1 + Num2)
-        return AddResult
+        return AddResult # Value returned
 
 # ------------------------------------------------------------------------------------------------------------#
 # Creation of a class called "Substraction"
@@ -21,7 +21,7 @@ class Substraction():
     # Class method
     def SubsOp(self, Num1, Num2):
         SubsResult = (Num1 - Num2)
-        return SubsResult
+        return SubsResult # Value returned
 # -------------------------------------------------------------------------------------------------------------#
 # Creation of a class called "Multiplication"
 class Multiplication():
@@ -33,7 +33,7 @@ class Multiplication():
     # Class method
     def MultOp(self, Num1, Num2):
         MultResult = (Num1 * Num2)
-        return MultResult
+        return MultResult # Value returned
 
 # -------------------------------------------------------------------------------------------------------------#
 # Creation of a class called "Division"
@@ -46,7 +46,7 @@ class Division():
     # Class method
     def DivOp(self, Num1, Num2):
         DivResult = (Num1 / Num2)
-        return DivResult
+        return DivResult # Value returned
 
 # -------------------------------------------------------------------------------------------------------------#
 # Creation of a class called "Square_Root"
@@ -66,4 +66,4 @@ class Square_Root():
             x = (Num1 / x + x) / 2
 
         SqrRResult = x # Variable "Res_SquR" is assigned "x" value
-        return SqrRResult
+        return SqrRResult # Value returned
