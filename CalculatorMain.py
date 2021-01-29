@@ -5,7 +5,7 @@ import os
 import sys
 import msvcrt
 from FunctionLibrary import * # My library
-from colorama import init, Fore # This is the library that will help with text color.
+from colorama import init, Fore # This is the library that will help with the text color.
 init(autoreset = True)
 
 index = 1
