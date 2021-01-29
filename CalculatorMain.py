@@ -84,9 +84,24 @@ while(index == 1):
                     print("\nPress any Key to return to the Basic Math Functions...")
                     msvcrt.getwch() # Press a key before returning to the main menu
                     os.system("cls") # Clear the window
-                    
+
+            # Option for "Square Root" function
             elif Option == 5:
-                print("Pending...")
+                Num1 = int(input("- Insert the number that you want to calculate it square root: "))
+
+                if Num1 < 0:
+                    print("\nMATH ERROR!...")
+                    print("\nPress any Key to return to the Basic Math Functions...")
+                    msvcrt.getwch() # Press a key before returning to the main menu
+                    os.system("cls") # Clear the window
+                else:
+                    objSqrRoot = Square_Root(Num1) # Creation of an object from the class "Addition"
+                    SqrRootResult = objSqrRoot.SquRootOp(Num1) # Method call
+                    print("\nTHE ANSWER OF THE SQUARE ROOT IS: " + str(SqrRootResult)) # Result
+
+                    print("\nPress any Key to return to the Basic Math Functions...")
+                    msvcrt.getwch() # Press a key before returning to the main menu
+                    os.system("cls") # Clear the window
             elif Option == 6:
                 print("Pending...")
             elif Option == 7:

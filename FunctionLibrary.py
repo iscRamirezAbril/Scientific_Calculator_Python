@@ -11,7 +11,6 @@ class Addition():
         return AddResult
 
 # ------------------------------------------------------------------------------------------------------------#
-
 # Creation of a class called "Substraction"
 class Substraction():
     # Class constructor
@@ -24,7 +23,7 @@ class Substraction():
         SubsResult = (Num1 - Num2)
         return SubsResult
 # -------------------------------------------------------------------------------------------------------------#
-
+# Creation of a class called "Multiplication"
 class Multiplication():
     # Class constructor
     def __init__(self, Num1, Num2):
@@ -37,7 +36,7 @@ class Multiplication():
         return MultResult
 
 # -------------------------------------------------------------------------------------------------------------#
-
+# Creation of a class called "Division"
 class Division():
     # Class constructor
     def __init__(self, Num1, Num2):
@@ -48,3 +47,23 @@ class Division():
     def DivOp(self, Num1, Num2):
         DivResult = (Num1 / Num2)
         return DivResult
+
+# -------------------------------------------------------------------------------------------------------------#
+# Creation of a class called "Square_Root"
+class Square_Root():
+
+    # Class constructor
+    def __init__(self, Num1):
+        self.Num1 = Num1
+
+    # Class method
+    def SquRootOp(self, Num1):
+        Num1 = Num1 * 1.0
+        x = Num1
+        i = 0
+        while i != x:
+            i = x
+            x = (Num1 / x + x) / 2
+
+        SqrRResult = x # Variable "Res_SquR" is assigned "x" value
+        return SqrRResult
