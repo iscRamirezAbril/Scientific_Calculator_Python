@@ -4,7 +4,7 @@
 import os
 import sys
 import msvcrt
-from FunctionLibrary import *
+from FunctionLibrary import * # My library
 from colorama import init, Fore # This is the library that will help with text color.
 init(autoreset = True)
 
@@ -29,18 +29,29 @@ while(contador == 1):
             # ----- Basic Math Functions Menu ----- #
             # ------------------------------------- #
             Option = int(input("A. BASIC MATH FUNCTIONS\n   1. Addition\n   2. Substraction\n   3. Multiplication\n   4. Division\n   5. Square Root\n   6. Cube Root\n   7. Return\n\nPlease, select an option: "))
+            
+            # Option for "Addition" function
             if Option == 1:
                 Num1 = int(input("- Insert the first number: "))
                 Num2 = int(input("- Insert the second number: "))
-                objAdd = Addition(Num1, Num2)
-                objAdd.AddOp(Num1, Num2)
+                objAdd = Addition(Num1, Num2) # Creation of an object from the class "Addition"
+                objAdd.AddOp(Num1, Num2) # Method call
 
                 print("\nPress any Key to return to the Basic Math Functions...")
                 msvcrt.getwch() # Press a key before returning to the main menu
                 os.system("cls") # Clear the window
 
+            # Option for "Substraction" function
             elif Option == 2:
-                print("Pending...")
+                Num1 = int(input("- Insert the first number: "))
+                Num2 = int(input("- Insert the second number: "))
+                objSubs = Substraction(Num1, Num2) # Creation of an object from the class "Addition"
+                objSubs.SubsOp(Num1, Num2) # Method call
+
+                print("\nPress any Key to return to the Basic Math Functions...")
+                msvcrt.getwch() # Press a key before returning to the main menu
+                os.system("cls") # Clear the window
+
             elif Option == 3:
                 print("Pending...")
             elif Option == 4:
