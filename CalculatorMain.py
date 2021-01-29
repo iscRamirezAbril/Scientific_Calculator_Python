@@ -102,8 +102,19 @@ while(index == 1):
                     print("\nPress any Key to return to the Basic Math Functions...")
                     msvcrt.getwch() # Press a key before returning to the main menu
                     os.system("cls") # Clear the window
+
+            # Option for "Cube Root" function
             elif Option == 6:
-                print("Pending...")
+                Num1 = int(input("- Insert the number that you want to calculate it cube root: "))
+
+                objCubeRoot = Cube_Root(Num1) # Creation of an object from the class "Addition"
+                CubeRootResult = objCubeRoot.CubeRootOp(Num1) # Method call
+                print("\nTHE ANSWER OF THE SQUARE ROOT IS: " + str(CubeRootResult)) # Result
+
+                print("\nPress any Key to return to the Basic Math Functions...")
+                msvcrt.getwch() # Press a key before returning to the main menu
+                os.system("cls") # Clear the window
+
             elif Option == 7:
                 print("Press any Key to return to the Main Menu...")
                 msvcrt.getwch() # Press a key before returning to the main menu

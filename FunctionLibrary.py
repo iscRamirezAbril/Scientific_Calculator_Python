@@ -66,3 +66,15 @@ class Square_Root():
 
         SqrRResult = x # Variable "Res_SquR" is assigned "x" value
         return SqrRResult # Value returned
+
+# -------------------------------------------------------------------------------------------------------------#
+# Creation of a class called "Square_Root"
+class Cube_Root():
+    # Class constructor
+    def __init__(self, Num1):
+        self.Num1 = Num1
+
+    # Class method
+    def CubeRootOp(self, Num1):
+        CubeRootResult = Num1 ** (1/3)
+        return CubeRootResult # Value returned
