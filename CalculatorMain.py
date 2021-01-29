@@ -4,7 +4,7 @@
 import os
 import sys
 import msvcrt
-import FunctionLibrary
+from FunctionLibrary import *
 from colorama import init, Fore # This is the library that will help with text color.
 init(autoreset = True)
 
@@ -32,9 +32,10 @@ while(contador == 1):
             if Option == 1:
                 Num1 = int(input("- Insert the first number: "))
                 Num2 = int(input("- Insert the second number: "))
-                FunctionLibrary.AddOp(Num1, Num2) # Function called from FunctionLibrary
+                objAdd = Addition(Num1, Num2)
+                objAdd.AddOp(Num1, Num2)
 
-                print("Press any Key to return to the Basic Math Functions...")
+                print("\nPress any Key to return to the Basic Math Functions...")
                 msvcrt.getwch() # Press a key before returning to the main menu
                 os.system("cls") # Clear the window
 
