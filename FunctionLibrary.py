@@ -51,7 +51,6 @@ class Division():
 # -------------------------------------------------------------------------------------------------------------#
 # Creation of a class called "Square_Root"
 class Square_Root():
-
     # Class constructor
     def __init__(self, Num1):
         self.Num1 = Num1
