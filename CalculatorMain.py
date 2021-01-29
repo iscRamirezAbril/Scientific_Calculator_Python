@@ -8,12 +8,12 @@ from FunctionLibrary import * # My library
 from colorama import init, Fore # This is the library that will help with text color.
 init(autoreset = True)
 
-contador = 1
+index = 1
 
 # -------------------------- #
 # ----- Principal Menu ----- #
 # -------------------------- #
-while(contador == 1):
+while(index == 1):
     os.system("cls") # Clear the window
     print(Fore.CYAN + "=============================================================================================")
     print(Fore.CYAN + "                     --- Welcome to the Scientific Calculator! :D ---                        ")
@@ -22,9 +22,9 @@ while(contador == 1):
     Option = int(input("This is the Principal Menu\n   1. Basic Math Functions\n   2. More Math Functions\n   3. Trigonometric Functions\n   4. Exit\n\nPlease, select an option: "))
 
     if(Option == 1):
-        contador1 = 0
+        index1 = 0
         os.system("cls") # Clear the window
-        while(contador1 == 0):
+        while(index1 == 0):
             # ------------------------------------- #
             # ----- Basic Math Functions Menu ----- #
             # ------------------------------------- #
@@ -35,7 +35,8 @@ while(contador == 1):
                 Num1 = int(input("- Insert the first number: "))
                 Num2 = int(input("- Insert the second number: "))
                 objAdd = Addition(Num1, Num2) # Creation of an object from the class "Addition"
-                objAdd.AddOp(Num1, Num2) # Method call
+                AddResult = objAdd.AddOp(Num1, Num2) # Method call
+                print("\nTHE ANSWER FOR THE ADDITION IS: " + str(AddResult)) # Result
 
                 print("\nPress any Key to return to the Basic Math Functions...")
                 msvcrt.getwch() # Press a key before returning to the main menu
@@ -46,14 +47,26 @@ while(contador == 1):
                 Num1 = int(input("- Insert the first number: "))
                 Num2 = int(input("- Insert the second number: "))
                 objSubs = Substraction(Num1, Num2) # Creation of an object from the class "Addition"
-                objSubs.SubsOp(Num1, Num2) # Method call
+                SubsResult = objSubs.SubsOp(Num1, Num2) # Method call
+                print("\nTHE ANSWER FOR THE SUBSTRACTION IS: " + str(SubsResult)) # Result
 
                 print("\nPress any Key to return to the Basic Math Functions...")
                 msvcrt.getwch() # Press a key before returning to the main menu
                 os.system("cls") # Clear the window
 
+            # Option for "Multiplication" function
             elif Option == 3:
-                print("Pending...")
+                Num1 = int(input("- Insert the first number: "))
+                Num2 = int(input("- Insert the second number: "))
+                objMult = Multiplication(Num1, Num2) # Creation of an object from the class "Addition"
+                MultResult = objMult.MultOp(Num1, Num2) # Method call
+                print("\nTHE ANSWER FOR THE SUBSTRACTION IS: " + str(MultResult)) # Result
+
+                print("\nPress any Key to return to the Basic Math Functions...")
+                msvcrt.getwch() # Press a key before returning to the main menu
+                os.system("cls") # Clear the window
+
+            # Option for "Division" function
             elif Option == 4:
                 print("Pending...")
             elif Option == 5:
@@ -67,9 +80,9 @@ while(contador == 1):
         os.system("cls") # Clear the window
 
     elif(Option == 2):
-        contador1 = 0
+        index1 = 0
         os.system("cls") # Clear the window
-        while(contador1 == 0):
+        while(index1 == 0):
             # ------------------------------------ #
             # ----- More Math Functions Menu ----- #
             # ------------------------------------ #
@@ -97,17 +110,17 @@ while(contador == 1):
         os.system("cls") # Clear the window
 
     elif(Option == 3):
-        contador1 == 0
+        index1 == 0
         os.system("cls") # Clear the window
-        while(contador1 == 0):
+        while(index1 == 0):
             # ---------------------------------------- #
             # ----- Trigonometric Functions Menu ----- #
             # ---------------------------------------- #
             Option = int(input("C. TRIGONOMETRIC FUNCTIONS\n   1. Basic Trigonometric Functions\n   2. Inverse Trigonometric Functions\n   3. Hiperbolic Trigonometric Functions\n   4. Return\n\nPlease, select an option: "))
             if Option == 1:
-                contador2 = 0
+                index2 = 0
                 os.system("cls") # Clear the window
-                while(contador2 == 0):
+                while(index2 == 0):
                     # ---------------------------------------------- #
                     # ----- Basic Trigonometric Functions Menu ----- #
                     # ---------------------------------------------- #
@@ -130,9 +143,9 @@ while(contador == 1):
                         break
                 os.system("cls") # Clear the window
             elif Option == 2:
-                contador2 = 0
+                index2 = 0
                 os.system("cls") # Clear the window
-                while(contador2 == 0):
+                while(index2 == 0):
                     # ------------------------------------------------ #
                     # ----- Inverse Trigonometric Functions Menu ----- #
                     # ------------------------------------------------ #
@@ -148,9 +161,9 @@ while(contador == 1):
                         msvcrt.getwch() # Press a key before returning to the main menu
                         break
             elif Option == 3:
-                contador2 = 0
+                index2 = 0
                 os.system("cls") # Clear the window
-                while(contador2 == 0):
+                while(index2 == 0):
                     # --------------------------------------------------- #
                     # ----- Hiperbolic Trigonometric Functions Menu ----- #
                     # --------------------------------------------------- #
@@ -180,4 +193,4 @@ while(contador == 1):
         print("Please, select a valid option...")
         print("Press any key to try again :)")
         msvcrt.getwch() # Press a key before returning to the main menu
-        contador = 1
+        index = 1

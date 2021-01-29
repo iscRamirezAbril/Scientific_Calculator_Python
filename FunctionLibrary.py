@@ -7,7 +7,8 @@ class Addition():
 
     # Class method
     def AddOp(self, Num1, Num2):
-        print("The answer for the addition is: ", Num1 + Num2)
+        AddResult = (Num1 + Num2)
+        return AddResult
 
 # ------------------------------------------------------------------------------------------------------------#
 
@@ -20,6 +21,17 @@ class Substraction():
     
     # Class method
     def SubsOp(self, Num1, Num2):
-        print("The answer for the substitution is: ", Num1 - Num2)
-
+        SubsResult = (Num1 - Num2)
+        return SubsResult
 # -------------------------------------------------------------------------------------------------------------#
+
+class Multiplication():
+    # Class constructor
+    def __init__(self, Num1, Num2):
+        self.Num1 = Num1
+        self.Num2 = Num2
+    
+    # Class method
+    def MultOp(self, Num1, Num2):
+        MultResult = (Num1 * Num2)
+        return MultResult
