@@ -21,6 +21,7 @@ while(index == 1):
 
     Option = int(input("This is the Principal Menu\n   1. Basic Math Functions\n   2. More Math Functions\n   3. Trigonometric Functions\n   4. Exit\n\nPlease, select an option: "))
 
+    # Option for enter to the "Basic Math Functions" menu
     if(Option == 1):
         index1 = 0
         os.system("cls") # Clear the window
@@ -32,8 +33,8 @@ while(index == 1):
             
             # Option for "Addition" function
             if Option == 1:
-                Num1 = int(input("- Insert the first number: "))
-                Num2 = int(input("- Insert the second number: "))
+                Num1 = float(input("- Insert the first number: "))
+                Num2 = float(input("- Insert the second number: "))
                 objAdd = Addition(Num1, Num2) # Creation of an object from the class "Addition"
                 AddResult = objAdd.AddOp(Num1, Num2) # Method call
                 print("\nTHE ANSWER OF THE ADDITION IS: " + str(AddResult)) # Result
@@ -44,8 +45,8 @@ while(index == 1):
 
             # Option for "Substraction" function
             elif Option == 2:
-                Num1 = int(input("- Insert the first number: "))
-                Num2 = int(input("- Insert the second number: "))
+                Num1 = float(input("- Insert the first number: "))
+                Num2 = float(input("- Insert the second number: "))
                 objSubs = Substraction(Num1, Num2) # Creation of an object from the class "Substraction"
                 SubsResult = objSubs.SubsOp(Num1, Num2) # Method call
                 print("\nTHE ANSWER OF THE SUBSTRACTION IS: " + str(SubsResult)) # Result
@@ -56,8 +57,8 @@ while(index == 1):
 
             # Option for "Multiplication" function
             elif Option == 3:
-                Num1 = int(input("- Insert the first number: "))
-                Num2 = int(input("- Insert the second number: "))
+                Num1 = float(input("- Insert the first number: "))
+                Num2 = float(input("- Insert the second number: "))
                 objMult = Multiplication(Num1, Num2) # Creation of an object from the class "Multiplication"
                 MultResult = objMult.MultOp(Num1, Num2) # Method call
                 print("\nTHE ANSWER OF THE MULTIPLICATION IS: " + str(MultResult)) # Result
@@ -68,8 +69,8 @@ while(index == 1):
 
             # Option for "Division" function
             elif Option == 4:
-                Num1 = int(input("- Insert the first number: "))
-                Num2 = int(input("- Insert the second number: "))
+                Num1 = float(input("- Insert the first number: "))
+                Num2 = float(input("- Insert the second number: "))
 
                 if Num2 == 0:
                     print("\nMATH ERROR!...")
@@ -87,7 +88,7 @@ while(index == 1):
 
             # Option for "Square Root" function
             elif Option == 5:
-                Num1 = int(input("- Insert the number that you want to calculate it square root: "))
+                Num1 = float(input("- Insert the number that you want to calculate it square root: "))
 
                 if Num1 < 0:
                     print("\nMATH ERROR!...")
@@ -105,7 +106,7 @@ while(index == 1):
 
             # Option for "Cube Root" function
             elif Option == 6:
-                Num1 = int(input("- Insert the number that you want to calculate it cube root: "))
+                Num1 = float(input("- Insert the number that you want to calculate it cube root: "))
 
                 objCubeRoot = Cube_Root(Num1) # Creation of an object from the class "Cube_Root"
                 CubeRootResult = objCubeRoot.CubeRootOp(Num1) # Method call
@@ -122,6 +123,7 @@ while(index == 1):
                 break
         os.system("cls") # Clear the window
 
+    # Option for enter to the "Basic Math Functions" menu
     elif(Option == 2):
         index1 = 0
         os.system("cls") # Clear the window
@@ -129,13 +131,45 @@ while(index == 1):
             # ------------------------------------ #
             # ----- More Math Functions Menu ----- #
             # ------------------------------------ #
-            Option = int(input("B. MORE MATH FUNCTIONS\n   1. Square of a numbre\n   2. Cube of a number\n   3. Number Raised to x power\n   4. Number Raised to -1 power\n   5. Percentage of a number\n   6. Factorial\n   7. Logarithm\n   8. Natural Logarithm\n   9. Return\n\nPlease, select an option: "))
+            Option = int(input("B. MORE MATH FUNCTIONS\n   1. Square of a number\n   2. Cube of a number\n   3. Number Raised to x power\n   4. Number Raised to -1 power\n   5. Percentage of a number\n   6. Factorial\n   7. Logarithm\n   8. Natural Logarithm\n   9. Return\n\nPlease, select an option: "))
+            
+            # Option for "Square of a number" operation
             if Option == 1:
-                print("Pending...")
+                Num1 = float(input("- Insert the number that you want to elevate at square power: "))
+
+                objNumSqu = Num_Squr(Num1) # Creation of an object from the class "Cube_Root"
+                NumSqurResult = objNumSqu.NumSqurOp(Num1) # Method call
+                print("\nTHE ANSWER OF THE SQUARE ROOT IS: " + str(NumSqurResult)) # Result
+
+                print("\nPress any Key to return to the Basic Math Functions...")
+                msvcrt.getwch() # Press a key before returning to the main menu
+                os.system("cls") # Clear the window
+
+            # Option for "Cube of a number" operation
             elif Option == 2:
-                print("Pending...")
+                Num1 = float(input("- Insert the number that you want to elevate at cube power: "))
+
+                objNumCube = Num_Cubed(Num1) # Creation of an object from the class "Cube_Root"
+                NumSqurResult = objNumCube.NumCubedOp(Num1) # Method call
+                print("\nTHE ANSWER OF THE SQUARE ROOT IS: " + str(NumSqurResult)) # Result
+
+                print("\nPress any Key to return to the Basic Math Functions...")
+                msvcrt.getwch() # Press a key before returning to the main menu
+                os.system("cls") # Clear the window
+
+            # Option for "Number Raised to x power" operation   
             elif Option == 3:
-                print("Pending...")
+                Num1 = float(input("- Insert the number that you want to elevate at x power: "))
+                Num2 = float(input("- Insert the x number (the exponent): "))
+
+                objNumRaisedX = Num_Raisedx(Num1, Num2) # Creation of an object from the class "Cube_Root"
+                NumRaisedXResult = objNumRaisedX.NumRaisedXOp(Num1, Num2) # Method call
+                print("\nTHE ANSWER OF THE SQUARE ROOT IS: " + str(NumRaisedXResult)) # Result
+
+                print("\nPress any Key to return to the Basic Math Functions...")
+                msvcrt.getwch() # Press a key before returning to the main menu
+                os.system("cls") # Clear the window
+
             elif Option == 4:
                 print("Pending...")
             elif Option == 5:
