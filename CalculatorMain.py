@@ -36,7 +36,7 @@ while(index == 1):
                 Num2 = int(input("- Insert the second number: "))
                 objAdd = Addition(Num1, Num2) # Creation of an object from the class "Addition"
                 AddResult = objAdd.AddOp(Num1, Num2) # Method call
-                print("\nTHE ANSWER FOR THE ADDITION IS: " + str(AddResult)) # Result
+                print("\nTHE ANSWER OF THE ADDITION IS: " + str(AddResult)) # Result
 
                 print("\nPress any Key to return to the Basic Math Functions...")
                 msvcrt.getwch() # Press a key before returning to the main menu
@@ -48,7 +48,7 @@ while(index == 1):
                 Num2 = int(input("- Insert the second number: "))
                 objSubs = Substraction(Num1, Num2) # Creation of an object from the class "Addition"
                 SubsResult = objSubs.SubsOp(Num1, Num2) # Method call
-                print("\nTHE ANSWER FOR THE SUBSTRACTION IS: " + str(SubsResult)) # Result
+                print("\nTHE ANSWER OF THE SUBSTRACTION IS: " + str(SubsResult)) # Result
 
                 print("\nPress any Key to return to the Basic Math Functions...")
                 msvcrt.getwch() # Press a key before returning to the main menu
@@ -60,7 +60,7 @@ while(index == 1):
                 Num2 = int(input("- Insert the second number: "))
                 objMult = Multiplication(Num1, Num2) # Creation of an object from the class "Addition"
                 MultResult = objMult.MultOp(Num1, Num2) # Method call
-                print("\nTHE ANSWER FOR THE SUBSTRACTION IS: " + str(MultResult)) # Result
+                print("\nTHE ANSWER OF THE MULTIPLICATION IS: " + str(MultResult)) # Result
 
                 print("\nPress any Key to return to the Basic Math Functions...")
                 msvcrt.getwch() # Press a key before returning to the main menu
@@ -68,7 +68,23 @@ while(index == 1):
 
             # Option for "Division" function
             elif Option == 4:
-                print("Pending...")
+                Num1 = int(input("- Insert the first number: "))
+                Num2 = int(input("- Insert the second number: "))
+
+                if Num2 == 0:
+                    print("\nMATH ERROR!...")
+                    print("\nPress any Key to return to the Basic Math Functions...")
+                    msvcrt.getwch() # Press a key before returning to the main menu
+                    os.system("cls") # Clear the window
+                else:
+                    objDiv = Division(Num1, Num2) # Creation of an object from the class "Addition"
+                    DivResult = objDiv.DivOp(Num1, Num2) # Method call
+                    print("\nTHE ANSWER OF THE DIVIISON IS: " + str(DivResult)) # Result
+
+                    print("\nPress any Key to return to the Basic Math Functions...")
+                    msvcrt.getwch() # Press a key before returning to the main menu
+                    os.system("cls") # Clear the window
+                    
             elif Option == 5:
                 print("Pending...")
             elif Option == 6:

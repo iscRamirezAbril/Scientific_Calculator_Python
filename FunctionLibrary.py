@@ -35,3 +35,16 @@ class Multiplication():
     def MultOp(self, Num1, Num2):
         MultResult = (Num1 * Num2)
         return MultResult
+
+# -------------------------------------------------------------------------------------------------------------#
+
+class Division():
+    # Class constructor
+    def __init__(self, Num1, Num2):
+        self.Num1 = Num1
+        self.Num2 = Num2
+    
+    # Class method
+    def DivOp(self, Num1, Num2):
+        DivResult = (Num1 / Num2)
+        return DivResult
