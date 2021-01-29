@@ -46,7 +46,7 @@ while(index == 1):
             elif Option == 2:
                 Num1 = int(input("- Insert the first number: "))
                 Num2 = int(input("- Insert the second number: "))
-                objSubs = Substraction(Num1, Num2) # Creation of an object from the class "Addition"
+                objSubs = Substraction(Num1, Num2) # Creation of an object from the class "Substraction"
                 SubsResult = objSubs.SubsOp(Num1, Num2) # Method call
                 print("\nTHE ANSWER OF THE SUBSTRACTION IS: " + str(SubsResult)) # Result
 
@@ -58,7 +58,7 @@ while(index == 1):
             elif Option == 3:
                 Num1 = int(input("- Insert the first number: "))
                 Num2 = int(input("- Insert the second number: "))
-                objMult = Multiplication(Num1, Num2) # Creation of an object from the class "Addition"
+                objMult = Multiplication(Num1, Num2) # Creation of an object from the class "Multiplication"
                 MultResult = objMult.MultOp(Num1, Num2) # Method call
                 print("\nTHE ANSWER OF THE MULTIPLICATION IS: " + str(MultResult)) # Result
 
@@ -77,7 +77,7 @@ while(index == 1):
                     msvcrt.getwch() # Press a key before returning to the main menu
                     os.system("cls") # Clear the window
                 else:
-                    objDiv = Division(Num1, Num2) # Creation of an object from the class "Addition"
+                    objDiv = Division(Num1, Num2) # Creation of an object from the class "Division"
                     DivResult = objDiv.DivOp(Num1, Num2) # Method call
                     print("\nTHE ANSWER OF THE DIVIISON IS: " + str(DivResult)) # Result
 
@@ -95,7 +95,7 @@ while(index == 1):
                     msvcrt.getwch() # Press a key before returning to the main menu
                     os.system("cls") # Clear the window
                 else:
-                    objSqrRoot = Square_Root(Num1) # Creation of an object from the class "Addition"
+                    objSqrRoot = Square_Root(Num1) # Creation of an object from the class "Square_Root"
                     SqrRootResult = objSqrRoot.SquRootOp(Num1) # Method call
                     print("\nTHE ANSWER OF THE SQUARE ROOT IS: " + str(SqrRootResult)) # Result
 
@@ -107,7 +107,7 @@ while(index == 1):
             elif Option == 6:
                 Num1 = int(input("- Insert the number that you want to calculate it cube root: "))
 
-                objCubeRoot = Cube_Root(Num1) # Creation of an object from the class "Addition"
+                objCubeRoot = Cube_Root(Num1) # Creation of an object from the class "Cube_Root"
                 CubeRootResult = objCubeRoot.CubeRootOp(Num1) # Method call
                 print("\nTHE ANSWER OF THE SQUARE ROOT IS: " + str(CubeRootResult)) # Result
 
