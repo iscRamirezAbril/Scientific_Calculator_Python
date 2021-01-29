@@ -115,6 +115,7 @@ while(index == 1):
                 msvcrt.getwch() # Press a key before returning to the main menu
                 os.system("cls") # Clear the window
 
+            # Option to return to the main menu
             elif Option == 7:
                 print("Press any Key to return to the Main Menu...")
                 msvcrt.getwch() # Press a key before returning to the main menu
