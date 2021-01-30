@@ -115,3 +115,40 @@ class Num_Raisedx():
     def NumRaisedXOp(self, Num1, Num2):
         NumRaisedXResult = Num1 ** (Num2)
         return NumRaisedXResult # Value returned
+
+# -------------------------------------------------------------------------------------------------------------#
+# Creation of a class called "Num_Neg1"
+class Num_Neg1():
+    # Class constructor
+    def __init__(self, Num1):
+        self.Num1 = Num1
+    
+    # Class method
+    def NumNeg1Op(self, Num1):
+        NumCNeg1Result = 1 / Num1
+        return NumCNeg1Result # Value returned
+
+# -------------------------------------------------------------------------------------------------------------#
+# Creation of a class called "Num_Neg1"
+class Percentage():
+    # Class constructor
+    def __init__(self, Num1):
+        self.Num1 = Num1
+    
+    # Class method
+    def PercentageOp(self, Num1):
+        PercentageResult = Num1 / 100
+        return PercentageResult # Value returned
+
+# -------------------------------------------------------------------------------------------------------------#
+# Creation of a class called "Factorial"
+class Factorial():
+    # Class constructor
+    def __init__(self, Num1):
+        self.Num1 = Num1
+    # Class method
+    def FactorialOp(self, Num1):
+        FactorialResult = 1
+        for i in range(1, Num1 + 1):
+            FactorialResult = FactorialResult * i
+        return FactorialResult # Value returned
