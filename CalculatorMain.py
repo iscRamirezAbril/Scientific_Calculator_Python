@@ -40,7 +40,7 @@ while(index == 1):
                 print("\nTHE ANSWER OF THE ADDITION IS: " + str(AddResult)) # Result
 
                 print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the main menu
+                msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
                 os.system("cls") # Clear the window
 
             # Option for "Substraction" function
@@ -52,7 +52,7 @@ while(index == 1):
                 print("\nTHE ANSWER OF THE SUBSTRACTION IS: " + str(SubsResult)) # Result
 
                 print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the main menu
+                msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
                 os.system("cls") # Clear the window
 
             # Option for "Multiplication" function
@@ -64,7 +64,7 @@ while(index == 1):
                 print("\nTHE ANSWER OF THE MULTIPLICATION IS: " + str(MultResult)) # Result
 
                 print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the main menu
+                msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
                 os.system("cls") # Clear the window
 
             # Option for "Division" function
@@ -75,7 +75,7 @@ while(index == 1):
                 if Num2 == 0:
                     print("\nMATH ERROR!...")
                     print("\nPress any Key to return to the Basic Math Functions...")
-                    msvcrt.getwch() # Press a key before returning to the main menu
+                    msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
                     os.system("cls") # Clear the window
                 else:
                     objDiv = Division(Num1, Num2) # Creation of an object from the class "Division"
@@ -83,7 +83,7 @@ while(index == 1):
                     print("\nTHE ANSWER OF THE DIVIISON IS: " + str(DivResult)) # Result
 
                     print("\nPress any Key to return to the Basic Math Functions...")
-                    msvcrt.getwch() # Press a key before returning to the main menu
+                    msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
                     os.system("cls") # Clear the window
 
             # Option for "Square Root" function
@@ -93,7 +93,7 @@ while(index == 1):
                 if Num1 < 0:
                     print("\nMATH ERROR!...")
                     print("\nPress any Key to return to the Basic Math Functions...")
-                    msvcrt.getwch() # Press a key before returning to the main menu
+                    msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
                     os.system("cls") # Clear the window
                 else:
                     objSqrRoot = Square_Root(Num1) # Creation of an object from the class "Square_Root"
@@ -101,7 +101,7 @@ while(index == 1):
                     print("\nTHE ANSWER OF THE SQUARE ROOT IS: " + str(SqrRootResult)) # Result
 
                     print("\nPress any Key to return to the Basic Math Functions...")
-                    msvcrt.getwch() # Press a key before returning to the main menu
+                    msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
                     os.system("cls") # Clear the window
 
             # Option for "Cube Root" function
@@ -113,20 +113,20 @@ while(index == 1):
                 print("\nTHE ANSWER OF THE CUBE ROOT IS: " + str(CubeRootResult)) # Result
 
                 print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the main menu
+                msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
                 os.system("cls") # Clear the window
 
             # Option to return to the main menu
             elif Option == 7:
-                print("Press any Key to return to the Main Menu...")
-                msvcrt.getwch() # Press a key before returning to the main menu
+                print("\nPress any Key to return to the Main Menu...")
+                msvcrt.getwch() # Press a key before returning to the Main Menu
                 break
 
             # If the option isn't valid
             else:
-                print("Please, select a valid option...")
+                print("\nPlease, select a valid option...")
                 print("Press any key to try again :)")
-                msvcrt.getwch() # Press a key before returning to the main menu
+                msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
                 index1 = 0
                 os.system("cls") # Clear the window
 
@@ -149,7 +149,7 @@ while(index == 1):
                 print("\nTHE SQUARE OF THE NUMBER IS: " + str(NumSqurResult)) # Result
 
                 print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the main menu
+                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                 os.system("cls") # Clear the window
 
             # Option for "Cube of a number" operation
@@ -161,7 +161,7 @@ while(index == 1):
                 print("\nTHE CUBE OF THE NUMBER IS: " + str(NumSqurResult)) # Result
 
                 print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the main menu
+                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                 os.system("cls") # Clear the window
 
             # Option for "Number Raised to x power" operation   
@@ -174,59 +174,100 @@ while(index == 1):
                 print("\nTHE ANSWER IS: " + str(NumRaisedXResult)) # Result
 
                 print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the main menu
+                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                 os.system("cls") # Clear the window
 
             # Option for "Number Raised to -1 power" operation
             elif Option == 4:
                 Num1 = float(input("- Insert the number that you want to elevate at -1 power: "))
 
-                objNumNeg1 = Num_Neg1(Num1) # Creation of an object from the class "Cube_Root"
+                objNumNeg1 = Num_Neg1(Num1) # Creation of an object from the class "Num_Neg1"
                 NumNeg1Result = objNumNeg1.NumNeg1Op(Num1) # Method call
                 print("\nTHE ANSWER IS: " + str(NumNeg1Result)) # Result
 
                 print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the main menu
+                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                 os.system("cls") # Clear the window
 
             # Option for "Percentage of a number" operation
             elif Option == 5:
                 Num1 = float(input("- Insert the number that you want to calculate it percentage: "))
 
-                objPercentage = Percentage(Num1) # Creation of an object from the class "Cube_Root"
+                objPercentage = Percentage(Num1) # Creation of an object from the class "Percentage"
                 PercentageResult = objPercentage.PercentageOp(Num1) # Method call
                 print("\nTHE PERCENTAGE IS: " + str(PercentageResult)) # Result
 
                 print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the main menu
+                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                 os.system("cls") # Clear the window
 
-            # Option to calculate the "factorial"
+            # Option to calculate the "Factorial"
             elif Option == 6:
                 Num1 = int(input("- Insert a number to calculate it factorial: "))
+
                 if Num1 == 1:
                     print("\nTHE FACTORIAL IS: 1") # Result
                     print("\nPress any Key to return to the Basic Math Functions...")
-                    msvcrt.getwch() # Press a key before returning to the main menu
+                    msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                     os.system("cls") # Clear the window
                 else:
-                    objFactorial = Factorial(Num1) # Creation of an object from the class "Cube_Root"
+                    objFactorial = Factorial(Num1) # Creation of an object from the class "Factorial"
                     FactorialResult = objFactorial.FactorialOp(Num1) # Method call
                     print("\nTHE FACTORIAL IS: " + str(FactorialResult)) # Result
 
                     print("\nPress any Key to return to the Basic Math Functions...")
-                    msvcrt.getwch() # Press a key before returning to the main menu
+                    msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                     os.system("cls") # Clear the window
 
+            # Option to calculate the "Logarithm"
             elif Option == 7:
-                print("Pending...")
+                Num1 = float(input("- Insert a number to calculate it Logarithm: "))
+
+                if Num1 <= 0:
+                    print("\nMATH ERROR!...")
+                    print("\nPress any Key to return to the Basic Math Functions...")
+                    msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                    os.system("cls") # Clear the window
+                else:
+                    objLogarithm = Logarithm(Num1) # Creation of an object from the class "Logarithm"
+                    LogarithmResult = objLogarithm.LogarithmOp(Num1) # Method call
+                    print("\nTHE LOGARITHM IS: " + str(LogarithmResult)) # Result
+
+                    print("\nPress any Key to return to the Basic Math Functions...")
+                    msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                    os.system("cls") # Clear the window
+
+            # Option to calculate the "Natural Logarithm"
             elif Option == 8:
-                print("Pending...")
+                Num1 = float(input("- Insert a number to calculate it Natural Logarithm: "))
+
+                if Num1 <= 0:
+                    print("\nMATH ERROR!...")
+                    print("\nPress any Key to return to the Basic Math Functions...")
+                    msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                    os.system("cls") # Clear the window
+                else:
+                    objNatLogarithm = Natural_Logarithm(Num1) # Creation of an object from the class "Natural_Logarithm"
+                    NaturalLogarithmResult = objNatLogarithm.NaturalLogarithmOp(Num1) # Method call
+                    print("\nTHE NATURAL LOGARITHM IS: " + str(NaturalLogarithmResult)) # Result
+
+                    print("\nPress any Key to return to the Basic Math Functions...")
+                    msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                    os.system("cls") # Clear the window
+
+            # Option to return to the main menu
             elif Option == 9:
-                print("Press any Key to return to the Main Menu...")
-                msvcrt.getwch() # Press a key before returning to the main menu
+                print("\nPress any Key to return to the Main Menu...")
+                msvcrt.getwch() # Press a key before returning to the Main Menu
                 break
-        os.system("cls") # Clear the window
+
+            # If the option isn't valid
+            else:
+                print("\nPlease, select a valid option...")
+                print("Press any key to try again :)")
+                msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
+                index1 = 0
+                os.system("cls") # Clear the window
 
     elif(Option == 3):
         index1 == 0
@@ -311,7 +352,7 @@ while(index == 1):
 
     # If the option isn't valid
     else:
-        print("Please, select a valid option...")
+        print("\nPlease, select a valid option...")
         print("Press any key to try again :)")
         msvcrt.getwch() # Press a key before returning to the main menu
         index = 1

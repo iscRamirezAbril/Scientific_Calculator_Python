@@ -146,9 +146,40 @@ class Factorial():
     # Class constructor
     def __init__(self, Num1):
         self.Num1 = Num1
+
     # Class method
     def FactorialOp(self, Num1):
         FactorialResult = 1
         for i in range(1, Num1 + 1):
             FactorialResult = FactorialResult * i
         return FactorialResult # Value returned
+
+# -------------------------------------------------------------------------------------------------------------#
+# Creation of a class called "Logarithm"
+class Logarithm():
+    # Class constructor
+    def __init__(self, Num1):
+        self.Num1 = Num1
+
+    # Class method
+    def LogarithmOp(self, Num1):
+        x = (Num1 - 1) / (Num1 + 1)
+        A = (x * x) * ((1 / 3) + (1 / 5) * (x * x))
+
+        LogarithmResult = 0.87 * x * (A + 1)
+        return LogarithmResult # Value returned
+
+# -------------------------------------------------------------------------------------------------------------#
+# Creation of a class called "Natural Logarithm"
+class Natural_Logarithm():
+    # Class constructor
+    def __init__(self, Num1):
+        self.Num1 = Num1
+
+    # Class method
+    def NaturalLogarithmOp(self, Num1):
+        x = (Num1 - 1) / (Num1 + 1)
+        A = (x * x) * ((1 / 3) + (1 / 5) * (x * x))
+
+        NatLogarithmResult = 0.87 * x * (A + 1) * 2.4025
+        return NatLogarithmResult # Value returned
