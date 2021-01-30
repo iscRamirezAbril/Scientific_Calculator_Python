@@ -21,7 +21,7 @@ while(index == 1):
 
     Option = int(input("This is the Principal Menu\n   1. Basic Math Functions\n   2. More Math Functions\n   3. Trigonometric Functions\n   4. Exit\n\nPlease, select an option: "))
 
-    # Option for enter to the "Basic Math Functions" menu
+    # Option to enter to the "Basic Math Functions" menu
     if(Option == 1):
         index1 = 0
         os.system("cls") # Clear the window
@@ -130,7 +130,7 @@ while(index == 1):
                 index1 = 0
                 os.system("cls") # Clear the window
 
-    # Option for enter to the "Basic Math Functions" menu
+    # Option to enter to the "More Math Functions" menu
     elif(Option == 2):
         index1 = 0
         os.system("cls") # Clear the window
@@ -269,6 +269,7 @@ while(index == 1):
                 index1 = 0
                 os.system("cls") # Clear the window
 
+    # Option to enter to the "Trigonometric Functions" menu
     elif(Option == 3):
         index1 == 0
         os.system("cls") # Clear the window
@@ -301,7 +302,15 @@ while(index == 1):
                         print("Press any Key to return to the Trigonometric Functions Menu...")
                         msvcrt.getwch() # Press a key before returning to the main menu
                         break
-                os.system("cls") # Clear the window
+
+                    # If the option isn't valid
+                    else:
+                        print("\nPlease, select a valid option...")
+                        print("Press any key to try again :)")
+                        msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
+                        index1 = 0
+                        os.system("cls") # Clear the window
+
             elif Option == 2:
                 index2 = 0
                 os.system("cls") # Clear the window
@@ -320,6 +329,15 @@ while(index == 1):
                         print("Press any Key to return to the Trigonometric Functions Menu...")
                         msvcrt.getwch() # Press a key before returning to the main menu
                         break
+
+                    # If the option isn't valid
+                    else:
+                        print("\nPlease, select a valid option...")
+                        print("Press any key to try again :)")
+                        msvcrt.getwch() # Press a key before returning to the Inverse Trigonometric Functions Menu
+                        index1 = 0
+                        os.system("cls") # Clear the window
+
             elif Option == 3:
                 index2 = 0
                 os.system("cls") # Clear the window
@@ -338,6 +356,15 @@ while(index == 1):
                         print("Press any Key to return to the Trigonometric Functions Menu...")
                         msvcrt.getwch() # Press a key before returning to the main menu
                         break
+
+                    # If the option isn't valid
+                    else:
+                        print("\nPlease, select a valid option...")
+                        print("Press any key to try again :)")
+                        msvcrt.getwch() # Press a key before returning to the Hiberbolic Trigonometric Functions Menu
+                        index1 = 0
+                        os.system("cls") # Clear the window
+
             elif Option == 4:
                 print("Press any Key to return to the Main Menu...")
                 msvcrt.getwch() # Press a key before returning to the main menu

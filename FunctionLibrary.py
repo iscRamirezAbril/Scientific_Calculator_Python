@@ -1,3 +1,7 @@
+                                    # --------------------------------- #
+                                    # ----- Basic Math Functions  ----- #
+                                    # --------------------------------- #
+# ------------------------------------------------------------------------------------------------------------ #
 # Creation of a class called "Addition"
 class Addition():
     # Class constructor
@@ -10,7 +14,7 @@ class Addition():
         AddResult = (Num1 + Num2)
         return AddResult # Value returned
 
-# ------------------------------------------------------------------------------------------------------------#
+# ------------------------------------------------------------------------------------------------------------ #
 # Creation of a class called "Substraction"
 class Substraction():
     # Class constructor
@@ -22,7 +26,8 @@ class Substraction():
     def SubsOp(self, Num1, Num2):
         SubsResult = (Num1 - Num2)
         return SubsResult # Value returned
-# -------------------------------------------------------------------------------------------------------------#
+
+# ------------------------------------------------------------------------------------------------------------ #
 # Creation of a class called "Multiplication"
 class Multiplication():
     # Class constructor
@@ -35,7 +40,7 @@ class Multiplication():
         MultResult = (Num1 * Num2)
         return MultResult # Value returned
 
-# -------------------------------------------------------------------------------------------------------------#
+# ------------------------------------------------------------------------------------------------------------ #
 # Creation of a class called "Division"
 class Division():
     # Class constructor
@@ -48,7 +53,7 @@ class Division():
         DivResult = (Num1 / Num2)
         return DivResult # Value returned
 
-# -------------------------------------------------------------------------------------------------------------#
+# ------------------------------------------------------------------------------------------------------------ #
 # Creation of a class called "Square_Root"
 class Square_Root():
     # Class constructor
@@ -67,7 +72,7 @@ class Square_Root():
         SqrRResult = x # Variable "Res_SquR" is assigned "x" value
         return SqrRResult # Value returned
 
-# -------------------------------------------------------------------------------------------------------------#
+# ------------------------------------------------------------------------------------------------------------ #
 # Creation of a class called "Cube_Root"
 class Cube_Root():
     # Class constructor
@@ -79,7 +84,10 @@ class Cube_Root():
         CubeRootResult = Num1 ** (1/3)
         return CubeRootResult # Value returned
 
-# -------------------------------------------------------------------------------------------------------------#
+                                    # -------------------------------- #
+                                    # ----- More Math Functions  ----- #
+                                    # -------------------------------- #
+# ------------------------------------------------------------------------------------------------------------ #
 # Creation of a class called "Num_Squr"
 class Num_Squr():
     # Class constructor
@@ -91,7 +99,7 @@ class Num_Squr():
         NumSqurResult = Num1 * Num1
         return NumSqurResult # Value returned
 
-# -------------------------------------------------------------------------------------------------------------#
+# ------------------------------------------------------------------------------------------------------------ #
 # Creation of a class called "Num_Cubed"
 class Num_Cubed():
     # Class constructor
@@ -103,7 +111,7 @@ class Num_Cubed():
         NumCubedResult = Num1 * Num1 * Num1
         return NumCubedResult # Value returned
 
-# -------------------------------------------------------------------------------------------------------------#
+# ------------------------------------------------------------------------------------------------------------ #
 # Creation of a class called "Num_Cubed"
 class Num_Raisedx():
     # Class constructor
@@ -116,7 +124,7 @@ class Num_Raisedx():
         NumRaisedXResult = Num1 ** (Num2)
         return NumRaisedXResult # Value returned
 
-# -------------------------------------------------------------------------------------------------------------#
+# ------------------------------------------------------------------------------------------------------------ #
 # Creation of a class called "Num_Neg1"
 class Num_Neg1():
     # Class constructor
@@ -128,7 +136,7 @@ class Num_Neg1():
         NumCNeg1Result = 1 / Num1
         return NumCNeg1Result # Value returned
 
-# -------------------------------------------------------------------------------------------------------------#
+# ------------------------------------------------------------------------------------------------------------ #
 # Creation of a class called "Num_Neg1"
 class Percentage():
     # Class constructor
@@ -140,7 +148,7 @@ class Percentage():
         PercentageResult = Num1 / 100
         return PercentageResult # Value returned
 
-# -------------------------------------------------------------------------------------------------------------#
+# ------------------------------------------------------------------------------------------------------------ #
 # Creation of a class called "Factorial"
 class Factorial():
     # Class constructor
@@ -154,7 +162,7 @@ class Factorial():
             FactorialResult = FactorialResult * i
         return FactorialResult # Value returned
 
-# -------------------------------------------------------------------------------------------------------------#
+# ------------------------------------------------------------------------------------------------------------ #
 # Creation of a class called "Logarithm"
 class Logarithm():
     # Class constructor
@@ -169,7 +177,7 @@ class Logarithm():
         LogarithmResult = 0.87 * x * (A + 1)
         return LogarithmResult # Value returned
 
-# -------------------------------------------------------------------------------------------------------------#
+# ------------------------------------------------------------------------------------------------------------ #
 # Creation of a class called "Natural Logarithm"
 class Natural_Logarithm():
     # Class constructor
@@ -183,3 +191,8 @@ class Natural_Logarithm():
 
         NatLogarithmResult = 0.87 * x * (A + 1) * 2.4025
         return NatLogarithmResult # Value returned
+
+                                # ------------------------------------ #
+                                # ----- Trigonometric Functions  ----- #
+                                # ------------------------------------ #
+# ------------------------------------------------------------------------------------------------------------ #
