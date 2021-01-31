@@ -255,7 +255,7 @@ while(index == 1):
                     msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                     os.system("cls") # Clear the window
 
-            # Option to return to the main menu
+            # Option to return to the Main Menu
             elif Option == 9:
                 print("\nPress any Key to return to the Main Menu...")
                 msvcrt.getwch() # Press a key before returning to the Main Menu
@@ -271,13 +271,16 @@ while(index == 1):
 
     # Option to enter to the "Trigonometric Functions" menu
     elif(Option == 3):
-        index1 == 0
+        index1 = 0
         os.system("cls") # Clear the window
         while(index1 == 0):
+            os.system("cls") # Clear the window
             # ---------------------------------------- #
             # ----- Trigonometric Functions Menu ----- #
             # ---------------------------------------- #
             Option = int(input("C. TRIGONOMETRIC FUNCTIONS\n   1. Basic Trigonometric Functions\n   2. Inverse Trigonometric Functions\n   3. Hiperbolic Trigonometric Functions\n   4. Return\n\nPlease, select an option: "))
+            
+            # Option to enter to the "Basic Math Functions" Menu
             if Option == 1:
                 index2 = 0
                 os.system("cls") # Clear the window
@@ -286,8 +289,19 @@ while(index == 1):
                     # ----- Basic Trigonometric Functions Menu ----- #
                     # ---------------------------------------------- #
                     Option = int(input("I. BASIC TRIGONOMETRIC FUNCTIONS\n   1. Sine [sin(x)]\n   2. Cosine [cos(x)]\n   3. Tangent [tan(x)]\n   4. Secant [sec(x)]\n   5. Cosecant [csc(x)]\n   6. Cotangent [cot[x]]\n   7. Return\n\nPlease, select an option: "))
+                    
+                    # Option to calculate the "Sine(x)" of a number
                     if Option == 1:
-                        print("Pending...")
+                        Num1 = float(input("- Insert a number to calculate it Sine(x): "))
+
+                        objSine = Sine(Num1) # Creation of an object from the class "Sine"
+                        SineResult = objSine.SineOp(Num1) # Method call
+                        print("\nTHE SINE IS: " + str(SineResult)) # Result
+
+                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
+                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                        os.system("cls") # Clear the window
+
                     elif Option == 2:
                         print("Pending...")
                     elif Option == 3:
@@ -300,7 +314,7 @@ while(index == 1):
                         print("Pending...")
                     elif Option == 7:
                         print("Press any Key to return to the Trigonometric Functions Menu...")
-                        msvcrt.getwch() # Press a key before returning to the main menu
+                        msvcrt.getwch() # Press a key before returning to the Trigonometric Functions Menu
                         break
 
                     # If the option isn't valid
@@ -310,6 +324,7 @@ while(index == 1):
                         msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
                         index1 = 0
                         os.system("cls") # Clear the window
+                        break 
 
             elif Option == 2:
                 index2 = 0

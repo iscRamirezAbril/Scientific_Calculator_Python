@@ -112,7 +112,7 @@ class Num_Cubed():
         return NumCubedResult # Value returned
 
 # ------------------------------------------------------------------------------------------------------------ #
-# Creation of a class called "Num_Cubed"
+# Creation of a class called "Num_Raised"
 class Num_Raisedx():
     # Class constructor
     def __init__(self, Num1, Num2):
@@ -196,3 +196,29 @@ class Natural_Logarithm():
                                 # ----- Trigonometric Functions  ----- #
                                 # ------------------------------------ #
 # ------------------------------------------------------------------------------------------------------------ #
+# Creation of a class called "Sine"
+class Sine():
+    # Class constructor
+    def __init__(self, Num1):
+        self.Num1 = Num1
+
+    # Class method
+    def SineOp(self, Num1):
+        SineResult = 0
+        for i in range(0, 21):
+            Dividend = 1
+            for j in range((2 * i) + 1):
+                Dividend *= Num1
+
+            Divider = 1
+            for j in range(1, ((2 * i) + 1) + 1):
+                Divider *= j
+            
+            if i % 2 == 0:
+                sig = 1
+            else:
+                sig = -1
+            
+            SineResult += (Dividend / Divider) * sig
+        
+        return SineResult # Value returned
