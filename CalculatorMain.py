@@ -315,18 +315,9 @@ while(index == 1):
                         msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                         os.system("cls") # Clear the window
 
-                    # Option to calculate the "Cosine(x)" of a number
+                    # Option to calculate the "Tangent(x)" of a number
                     elif Option == 3:
-                        Num1 = float(input("- Insert a number to calculate it Tangent(x): "))
-
-                        objTangent = Tangent(Num1) # Creation of an object from the class "Cosine"
-                        TangentResult = objTangent.TangentOp(Num1) # Method call
-                        print("\nTHE TANGENT [IN RADIANS] IS: " + str(TangentResult)) # Result
-
-                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
-                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                        os.system("cls") # Clear the window
-                        
+                        print("Pending...")
                     elif Option == 4:
                         print("Pending...")
                     elif Option == 5:
