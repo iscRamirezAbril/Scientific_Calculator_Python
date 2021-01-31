@@ -4,6 +4,7 @@
 import os
 import sys
 import msvcrt
+import math
 from FunctionLibrary import * # My library
 from colorama import init, Fore # This is the library that will help with the text color.
 init(autoreset = True)
@@ -296,22 +297,44 @@ while(index == 1):
 
                         objSine = Sine(Num1) # Creation of an object from the class "Sine"
                         SineResult = objSine.SineOp(Num1) # Method call
-                        print("\nTHE SINE IS: " + str(SineResult)) # Result
+                        print("\nTHE SINE [IN RADIANS] IS: " + str(SineResult)) # Result
 
                         print("\nPress any Key to return to the Basic Trigonometric Functions...")
                         msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                         os.system("cls") # Clear the window
 
+                    # Option to calculate the "Cosine(x)" of a number
                     elif Option == 2:
-                        print("Pending...")
+                        Num1 = float(input("- Insert a number to calculate it Cosine(x): "))
+
+                        objCosine = Cosine(Num1) # Creation of an object from the class "Cosine"
+                        CosineResult = objCosine.CosineOp(Num1) # Method call
+                        print("\nTHE COSINE [IN RADIANS] IS: " + str(CosineResult)) # Result
+
+                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
+                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                        os.system("cls") # Clear the window
+
+                    # Option to calculate the "Cosine(x)" of a number
                     elif Option == 3:
-                        print("Pending...")
+                        Num1 = float(input("- Insert a number to calculate it Tangent(x): "))
+
+                        objTangent = Tangent(Num1) # Creation of an object from the class "Cosine"
+                        TangentResult = objTangent.TangentOp(Num1) # Method call
+                        print("\nTHE TANGENT [IN RADIANS] IS: " + str(TangentResult)) # Result
+
+                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
+                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                        os.system("cls") # Clear the window
+                        
                     elif Option == 4:
                         print("Pending...")
                     elif Option == 5:
                         print("Pending...")
                     elif Option == 6:
                         print("Pending...")
+
+                    # Option to return to the Main Menu
                     elif Option == 7:
                         print("Press any Key to return to the Trigonometric Functions Menu...")
                         msvcrt.getwch() # Press a key before returning to the Trigonometric Functions Menu
@@ -324,7 +347,6 @@ while(index == 1):
                         msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
                         index1 = 0
                         os.system("cls") # Clear the window
-                        break 
 
             elif Option == 2:
                 index2 = 0

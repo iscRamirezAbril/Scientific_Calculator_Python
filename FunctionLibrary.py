@@ -1,3 +1,4 @@
+import math
                                     # --------------------------------- #
                                     # ----- Basic Math Functions  ----- #
                                     # --------------------------------- #
@@ -205,13 +206,13 @@ class Sine():
     # Class method
     def SineOp(self, Num1):
         SineResult = 0
-        for i in range(0, 21):
+        for i in range(0, 21): # Principal summation
             Dividend = 1
-            for j in range((2 * i) + 1):
+            for j in range((2 * i) + 1): # Dividend
                 Dividend *= Num1
 
             Divider = 1
-            for j in range(1, ((2 * i) + 1) + 1):
+            for j in range(1, ((2 * i) + 1) + 1): # Divider
                 Divider *= j
             
             if i % 2 == 0:
@@ -222,3 +223,38 @@ class Sine():
             SineResult += (Dividend / Divider) * sig
         
         return SineResult # Value returned
+
+# ------------------------------------------------------------------------------------------------------------ #
+# Creation of a class called "Cosine"
+class Cosine():
+    # Class constructor
+    def __init__(self, Num1):
+        self.Num1 = Num1
+
+    # Class method
+    def CosineOp(self, Num1):
+        CosineResult = 0
+        for i in range(0, 21): # Principal summation
+            Dividend = 1
+            for j in range(2 * i): # Dividend
+                Dividend *= Num1
+
+            Divider = 1
+            for j in range(2, ((2 * i)) + 1): # Divider
+                Divider *= j
+            
+            if i % 2 == 0:
+                sig = -1
+            else:
+                sig = 1
+            
+            CosineResult -= (Dividend / Divider) * sig
+        
+        return CosineResult # Value returned
+
+# ------------------------------------------------------------------------------------------------------------ #
+# Creation of a class called "Tangent"
+class Tangent():
+    # Class constructor
+    def __init__(self, Num1):
+        self.Num1 = Num1
