@@ -326,8 +326,18 @@ while(index == 1):
                         msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                         os.system("cls") # Clear the window
 
+                    # Option to calculate the "Secant(x)" of a number
                     elif Option == 4:
-                        print("Pending...")
+                        Num1 = float(input("- Insert a number to calculate it Secant(x): "))
+
+                        TangentResult = objSine.SineOp(Num1) / objCosine.CosineOp(Num1) # Method call
+                        SecantResult = TangentResult / ObjSine.SineOp(Num1)
+                        print("\nTHE SECANT [IN RADIANS] IS: " + str(SecantResult)) # Result
+
+                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
+                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                        os.system("cls") # Clear the window
+
                     elif Option == 5:
                         print("Pending...")
                     elif Option == 6:
