@@ -331,7 +331,7 @@ while(index == 1):
                         Num1 = float(input("- Insert a number to calculate it Secant(x): "))
 
                         TangentResult = objSine.SineOp(Num1) / objCosine.CosineOp(Num1) # Method call
-                        SecantResult = TangentResult / ObjSine.SineOp(Num1)
+                        SecantResult = TangentResult / objSine.SineOp(Num1)
                         print("\nTHE SECANT [IN RADIANS] IS: " + str(SecantResult)) # Result
 
                         print("\nPress any Key to return to the Basic Trigonometric Functions...")
