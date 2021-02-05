@@ -330,16 +330,26 @@ while(index == 1):
                     elif Option == 4:
                         Num1 = float(input("- Insert a number to calculate it Secant(x): "))
 
-                        TangentResult = objSine.SineOp(Num1) / objCosine.CosineOp(Num1) # Method call
-                        SecantResult = TangentResult / objSine.SineOp(Num1)
+                        SecantResult = objSine.SineOp(Num1) / objCosine.CosineOp(Num1) # Method call
                         print("\nTHE SECANT [IN RADIANS] IS: " + str(SecantResult)) # Result
 
                         print("\nPress any Key to return to the Basic Trigonometric Functions...")
                         msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                         os.system("cls") # Clear the window
 
+                    # Option to calculate the "Cosecant(x)" of a number
                     elif Option == 5:
-                        print("Pending...")
+                        Num1 = float(input("- Insert a number to calculate it Cosecant(x): "))
+
+                        CotangentResult = objCosine.CosineOp(Num1) / objSine.SineOp(Num1) # Method call
+                        CosecantResult = CotangentResult / objCosine.CosineOp(Num1)
+                        print("\nTHE COSECANT [IN RADIANS] IS: " + str(CosecantResult)) # Result
+
+                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
+                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                        os.system("cls") # Clear the window
+
+                    # Option to calculate the "Cotangent(x)" of a number
                     elif Option == 6:
                         print("Pending...")
 
