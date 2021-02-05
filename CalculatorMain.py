@@ -317,7 +317,8 @@ while(index == 1):
 
                     # Option to calculate the "Tangent(x)" of a number
                     elif Option == 3:
-                        print("Pending...")
+                        Num1 = float(input("- Insert a number to calculate it Tangent(x): "))
+
                     elif Option == 4:
                         print("Pending...")
                     elif Option == 5:
