@@ -281,7 +281,7 @@ while(index == 1):
             # ---------------------------------------- #
             Option = int(input("C. TRIGONOMETRIC FUNCTIONS\n   1. Basic Trigonometric Functions\n   2. Inverse Trigonometric Functions\n   3. Hiperbolic Trigonometric Functions\n   4. Return\n\nPlease, select an option: "))
             
-            # Option to enter to the "Basic Math Functions" Menu
+            # Option to enter to the "Basic Trigonometric Functions" Menu
             if Option == 1:
                 index2 = 0
                 os.system("cls") # Clear the window
@@ -367,6 +367,7 @@ while(index == 1):
                         index1 = 0
                         os.system("cls") # Clear the window
 
+            # Option to enter to the "Inverse Trigonometric Functions" Menu
             elif Option == 2:
                 index2 = 0
                 os.system("cls") # Clear the window

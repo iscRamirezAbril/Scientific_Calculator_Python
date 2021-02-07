@@ -251,10 +251,3 @@ class Cosine():
             CosineResult -= (Dividend / Divider) * sig
         
         return CosineResult # Value returned
-
-# ------------------------------------------------------------------------------------------------------------ #
-# Creation of a class called "Tangent"
-class Tangent():
-    # Class constructor
-    def __init__(self, Num1):
-        self.Num1 = Num1
