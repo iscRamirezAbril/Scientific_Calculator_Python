@@ -422,7 +422,9 @@ while(index == 1):
                     # --------------------------------------------------- #
                     # ----- Hiperbolic Trigonometric Functions Menu ----- #
                     # --------------------------------------------------- #
-                    Option = int(input("III. HIPERBOLIC TRIGONOMETRIC FUNCTIONS\n   1. sinh(x)\n   2. cosh(x)\n   3. tanh(x)\n   4. Return\n\nPlease, select an option: "))
+                    Option = int(input("III. HIPERBOLIC TRIGONOMETRIC FUNCTIONS\n   1. sinh(x)\n   2. cosh(x)\n   3. tanh(x)\n   4. csch(x)\n   5. sech(x)\n   6. coth(x)\n   7. Return\n\nPlease, select an option: "))
+                    
+                    # Option to calculate the "Sineh(x)" of a number
                     if Option == 1:
                         Num1 = float(input("- Insert a number to calculate it Sineh(x): "))
 
@@ -436,8 +438,11 @@ while(index == 1):
                         msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                         os.system("cls") # Clear the window
 
+                   # Option to calculate the "Cosineh(x)" of a number
                     elif Option == 2:
-                       Num1 = float(input("- Insert a number to calculate it Cosineh(x): "))
+                        Num1 = float(input("- Insert a number to calculate it Cosineh(x): "))
+
+                        objCosineh = Cosineh(Num1) # Creation of an object from the class "Cosineh"
 
                         CosinehResult = objCosineh.CosinehOp(Num1) # Method call
 
@@ -447,9 +452,67 @@ while(index == 1):
                         msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                         os.system("cls") # Clear the window
 
+                   # Option to calculate the "Tangenth(x)" of a number
                     elif Option == 3:
-                        print("Pending...")
+                        Num1 = float(input("- Insert a number to calculate it Tangenth(x): "))
+
+                        objSineh = Sineh(Num1) # Creation of an object from the class "Sineh"
+                        objCosineh = Cosineh(Num1) # Creation of an object from the class "Cosineh"
+
+                        TangenthResult = objSineh.SinehOp(Num1) / objCosineh.CosinehOp(Num1) # Method call
+
+                        print("\nTHE HIPERBOLIC TANGENT [IN DEGREES] IS: " + str(TangenthResult)) # Result
+
+                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
+                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                        os.system("cls") # Clear the window
+
+                    # Option to calculate the "Cosecanth(x)" of a number
                     elif Option == 4:
+                        Num1 = float(input("- Insert a number to calculate it Cosecanth(x): "))
+
+                        objSineh = Sineh(Num1) # Creation of an object from the class "Sineh"
+
+                        CosecanthResult = 1 / objSineh.SinehOp(Num1) # Method call
+
+                        print("\nTHE HIPERBOLIC COSECANT [IN DEGREES] IS: " + str(CosecanthResult)) # Result
+
+                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
+                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                        os.system("cls") # Clear the window
+
+                    # Option to calculate the "Secanth(x)" of a number
+                    elif Option == 5:
+                        Num1 = float(input("- Insert a number to calculate it Secanth(x): "))
+
+                        objCosineh = Cosineh(Num1) # Creation of an object from the class "Cosineh"
+
+                        SecanthResult = 1 / objCosineh.CosinehOp(Num1) # Method call
+
+                        print("\nTHE HIPERBOLIC SECANT [IN DEGREES] IS: " + str(SecanthResult)) # Result
+
+                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
+                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                        os.system("cls") # Clear the window
+
+                    # Option to calculate the "Cotangenth(x)" of a number
+                    elif Option == 6:
+                        Num1 = float(input("- Insert a number to calculate it Cotangenth(x): "))
+
+                        objSineh = Sineh(Num1) # Creation of an object from the class "Sineh"
+                        objCosineh = Cosineh(Num1) # Creation of an object from the class "Cosineh"
+
+                        TangenthResult = objSineh.SinehOp(Num1) / objCosineh.CosinehOp(Num1) # Method call
+                        ContangenthResult = 1 / TangenthResult
+
+                        print("\nTHE HIPERBOLIC COTANGENT [IN DEGREES] IS: " + str(ContangenthResult)) # Result
+
+                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
+                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                        os.system("cls") # Clear the window
+
+                    # Option to return to the Main Menu
+                    elif Option == 7:
                         print("Press any Key to return to the Trigonometric Functions Menu...")
                         msvcrt.getwch() # Press a key before returning to the main menu
                         break
