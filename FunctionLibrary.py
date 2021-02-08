@@ -251,3 +251,49 @@ class Cosine():
             CosineResult -= (Dividend / Divider) * sig
         
         return CosineResult # Value returned
+
+# ------------------------------------------------------------------------------------------------------------ #
+# Creation of a class called "Sineh"
+class Sineh():
+    # Class constructor
+    def __init__(self, Num1):
+        self.Num1 = Num1
+    
+    # Class method
+    def SinehOp(self, Num1):
+        SinehResult = 0
+        for i in range(0, 21): # Principal summation
+            Dividend = 1
+            for j in range((2 * i) + 1): # Dividend
+                Dividend *= Num1
+
+            Divider = 1
+            for j in range(1, ((2 * i) + 1) + 1): # Divider
+                Divider *= j
+            
+            SinehResult += (Dividend / Divider)
+        
+        return SinehResult # Value returned
+
+# ------------------------------------------------------------------------------------------------------------ #
+# Creation of a class called "Cosineh"
+class Cosineh():
+    # Class constructor
+    def __init__(self, Num1):
+        self.Num1 = Num1
+    
+    # Class method
+    def CosinehOp(self, Num1):
+        CosinehResult = 0
+        for i in range(0, 21): # Principal summation
+            Dividend = 1
+            for j in range(2 * i): # Dividend
+                Dividend *= Num1
+
+            Divider = 1
+            for j in range(2, ((2 * i)) + 1): # Divider
+                Divider *= j
+            
+            CosinehResult += (Dividend / Divider)
+        
+        return CosinehResult # Value returned

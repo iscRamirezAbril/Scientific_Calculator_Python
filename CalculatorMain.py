@@ -424,9 +424,29 @@ while(index == 1):
                     # --------------------------------------------------- #
                     Option = int(input("III. HIPERBOLIC TRIGONOMETRIC FUNCTIONS\n   1. sinh(x)\n   2. cosh(x)\n   3. tanh(x)\n   4. Return\n\nPlease, select an option: "))
                     if Option == 1:
-                        print("Pending...")
+                        Num1 = float(input("- Insert a number to calculate it Sineh(x): "))
+
+                        objSineh = Sineh(Num1) # Creation of an object from the class "Sineh"
+
+                        SinehResult = objSineh.SinehOp(Num1) # Method call
+
+                        print("\nTHE HIPERBOLIC SINE [IN DEGREES] IS: " + str(SinehResult)) # Result
+
+                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
+                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                        os.system("cls") # Clear the window
+
                     elif Option == 2:
-                        print("Pending...")
+                       Num1 = float(input("- Insert a number to calculate it Cosineh(x): "))
+
+                        CosinehResult = objCosineh.CosinehOp(Num1) # Method call
+
+                        print("\nTHE HIPERBOLIC COSINE [IN DEGREES] IS: " + str(CosinehResult)) # Result
+
+                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
+                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                        os.system("cls") # Clear the window
+
                     elif Option == 3:
                         print("Pending...")
                     elif Option == 4:
