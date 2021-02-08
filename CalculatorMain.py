@@ -319,6 +319,9 @@ while(index == 1):
                     elif Option == 3:
                         Num1 = float(input("- Insert a number to calculate it Tangent(x): "))
 
+                        objSine = Sine(Num1) # Creation of an object from the class "Sine"
+                        objCosine = Cosine(Num1) # Creation of an object from the class "Cosine"
+
                         TangentResult = objSine.SineOp(Num1) / objCosine.CosineOp(Num1) # Method call
                         print("\nTHE TANGENT [IN RADIANS] IS: " + str(TangentResult)) # Result
 
@@ -329,6 +332,9 @@ while(index == 1):
                     # Option to calculate the "Secant(x)" of a number
                     elif Option == 4:
                         Num1 = float(input("- Insert a number to calculate it Secant(x): "))
+
+                        objSine = Sine(Num1) # Creation of an object from the class "Sine"
+                        objCosine = Cosine(Num1) # Creation of an object from the class "Cosine"
 
                         SecantResult = objSine.SineOp(Num1) / objCosine.CosineOp(Num1) # Method call
                         print("\nTHE SECANT [IN RADIANS] IS: " + str(SecantResult)) # Result
@@ -341,6 +347,9 @@ while(index == 1):
                     elif Option == 5:
                         Num1 = float(input("- Insert a number to calculate it Cosecant(x): "))
 
+                        objSine = Sine(Num1) # Creation of an object from the class "Sine"
+                        objCosine = Cosine(Num1) # Creation of an object from the class "Cosine"
+
                         CotangentResult = objCosine.CosineOp(Num1) / objSine.SineOp(Num1) # Method call
                         CosecantResult = CotangentResult / objCosine.CosineOp(Num1)
                         print("\nTHE COSECANT [IN RADIANS] IS: " + str(CosecantResult)) # Result
@@ -351,7 +360,18 @@ while(index == 1):
 
                     # Option to calculate the "Cotangent(x)" of a number
                     elif Option == 6:
-                        print("Pending...")
+                        Num1 = float(input("- Insert a number to calculate it Cosecant(x): "))
+
+                        objSine = Sine(Num1) # Creation of an object from the class "Sine"
+                        objCosine = Cosine(Num1) # Creation of an object from the class "Cosine"
+
+                        CotangentResult = objCosine.CosineOp(Num1) / objSine.SineOp(Num1) # Method call
+
+                        print("\nTHE COTANGENT [IN RADIANS] IS: " + str(CotangentResult)) # Result
+
+                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
+                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                        os.system("cls") # Clear the window
 
                     # Option to return to the Main Menu
                     elif Option == 7:
