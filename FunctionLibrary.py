@@ -308,8 +308,7 @@ class Arctan():
     # Class method
     def ArctanOp(self, Num1):
         ArctanResult = 0
-        j = 20
-        for i in range(j + 1):
-            ArctanResult += (-1)**(i + 1) * ((Num1 **(2 * i - 1) / (2 * i - 1))
-
+        for i in range(1, 30):
+            ArctanResult += Num1 ** (2 * i - 1) / ((2 * i - 1)) * ((-1) ** (i - 1))
+        
         return ArctanResult # Value returned
