@@ -400,8 +400,21 @@ while(index == 1):
                         print("Pending...")
                     elif Option == 2:
                         print("Pending...")
+                    
+                    # Option to calculate the "Arctan(x)" of a number
                     elif Option == 3:
-                        print("Pending...")
+                        Num1 = float(input("- Insert a number to calculate it Arctan(x): "))
+
+                        objArctan = Arctan(Num1) # Creation of an object from the class "Arctan"
+
+                        ArctanResult = objArctan.ArctanOp(Num1)
+
+                        print("\nTHE ARCTAN [IN RADIANS] IS: " + str(ArctanResult)) # Result
+
+                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
+                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                        os.system("cls") # Clear the window
+
                     elif Option == 4:
                         print("Press any Key to return to the Trigonometric Functions Menu...")
                         msvcrt.getwch() # Press a key before returning to the main menu

@@ -297,3 +297,19 @@ class Cosineh():
             CosinehResult += (Dividend / Divider)
         
         return CosinehResult # Value returned
+
+# ------------------------------------------------------------------------------------------------------------ #
+# Creation of a class called "Arctan"
+class Arctan():
+    # Class constructor
+    def __init__(self, Num1):
+        self.Num1 = Num1
+    
+    # Class method
+    def ArctanOp(self, Num1):
+        ArctanResult = 0
+        j = 20
+        for i in range(j + 1):
+            ArctanResult += (-1)**(i + 1) * ((Num1 **(2 * i - 1) / (2 * i - 1))
+
+        return ArctanResult # Value returned
