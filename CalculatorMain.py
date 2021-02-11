@@ -545,8 +545,21 @@ while(index == 1):
                 msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                 os.system("cls") # Clear the window
 
+            # Option to calculate the "Substraction" of 2 arrays
             elif Option == 2:
-                print("Pending...")
+                if len(Array1) == len(Array2) and len(Array1[0]) == len(Array2[0]):
+                    print("\n----- SUBSTRACTION -----")
+                    objArraySubs = ArraySubstracion(Array1, Array2) # Creation of an object from the class "ArraySubstraction"
+                    Array3 = objArraySubs.ArraySubstracionOp(Array1, Array2) # Method call and result
+                
+                else:
+                    print("The substraction of the Arrays can´t be calculate because both of them have different lengths...")
+                
+                print("\nPress any Key to return to the Operations with Arrays Menu...")
+                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                os.system("cls") # Clear the window
+
+            # Option to calculate the "Multiplication" of one array with a
             elif Option == 3:
                 print("Pending...")
                 
