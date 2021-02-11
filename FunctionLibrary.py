@@ -303,30 +303,54 @@ class Cosineh():
                                 # ----------------------------------- #
 # ------------------------------------------------------------------------------------------------------------ #
 # Creation of a class called "Array_Addition"
-class Array_Addition():
+class CaptureArrays():
     # Class constructor
-    def __init__(self, n, m):
-        self.n = n
-        self.m = m
+    def __init__(self, n1, m1, n2, m2):
+        self.n1 = n1
+        self.m1 = m1
+        self.n2 = n2
+        self.m2 = m2
     
-    # Class method
-    def createArray1(self, n, m):
+    # Class method #1
+    def createArray1(self, n1, m1):
         Array1 = [] # Declaration of an array
+        print("\n-------------------------------------------")
+        print("----- Capture of numbers for Array #1 -----")
+        print("-------------------------------------------")
 
-        for i in range(n):
+        for i in range(n1): # Rows
             Array1.append([])
-            for j in range(m):
-                value = int(input("Value [{}, {}]: ".format(i + 1, j + 1)))
+            for j in range(m1): # Columns
+                value = int(input("Value [{}, {}]: ".format(i + 1, j + 1))) # Format
                 Array1[i].append(value)
 
-        print("\n---------------------")
-        print("----- ARRAY # 1 -----")
-        print("---------------------")
-        for n in Array1:
+        print("\nTHE ARRAY #1 IS: ")
+        for n1 in Array1:
             print("[", end = " ")
-            for element in n:
+            for element in n1:
                 print("{:2.0f}".format(element), end = " ")
             print("]")
-        print()
 
         return Array1 # Value returned
+
+    # Class method #2
+    def createArray2(self, n2, m2):
+        Array2 = [] # Declaration of an array
+        print("\n-------------------------------------------")
+        print("----- Capture of numbers for Array #2 -----")
+        print("-------------------------------------------")
+
+        for k in range(n2): # Rows
+            Array2.append([])
+            for l in range(m2): # Columns
+                value = int(input("Value [{}, {}]: ".format(k + 1, l + 1))) # Format
+                Array2[k].append(value)
+
+        print("\nTHE ARRAY #2 IS: ")
+        for n2 in Array2:
+            print("[", end = " ")
+            for element in n2:
+                print("{:2.0f}".format(element), end = " ")
+            print("]")
+
+        return Array2 # Value returned

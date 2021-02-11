@@ -508,27 +508,31 @@ while(index == 1):
     elif Option == 4:
         index2 = 0
         os.system("cls") # Clear the window
+        print("----- CAPTURE OF THE ARRAYS -----")
+        print("For some operations, you need to capture 2 arrays...")
+        print("\n----- First Array -----")
+        n1 = int(input("  - Please, insert the number of rows that you want in the Array #1: "))
+        m1 = int(input("  - Please, insert the number of columns that you want in the Array #1: "))
+
+        print("\n----- Second Array -----")
+        n2 = int(input("  - Please, insert the number of rows that you want in the Array #2: "))
+        m2 = int(input("  - Please, insert the number of columns that you want in the Array #2: "))
+        objArrayAdd = CaptureArrays(n1, m1, n2, m2) # Creation of an object from the class "CaptureArrays"
+        
+        Array1 = objArrayAdd.createArray1(n1, m1) # Method call and result
+        Array2 = objArrayAdd.createArray2(n2, m2) # Method call and result
+        
+        print("\nPress any Key to enter to the Operations with Arrays Menu...")
+        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+
         while(index2 == 0):
             # --------------------------------------- #
             # ----- Operations with Arrays Menu ----- #
             # --------------------------------------- #
-            Option = int(input("III. OPERATIONS WITH ARRAYS\n   1. Addition\n   2. Substraction\n   3. Multiplication\n   4. Return\n\nPlease, select an option: "))
+            Option = int(input("\nIII. OPERATIONS WITH ARRAYS\n   1. Addition\n   2. Substraction\n   3. Multiplication\n   4. Return\n\nPlease, select an option: "))
             
             # Option to calculate the "Addition" of 2 arrays
             if Option == 1:
-                print("-----------------------")
-                print("----- First Array -----")
-                print("-----------------------")
-                n = int(input("  - Please, insert the number of rows that you want in the Array #1: "))
-                m = int(input("  - Please, insert the number of columns that you want in the Array #1: "))
-
-                print("\n------------------------------")
-                print("----- Capture of numbers -----")
-                print("------------------------------")
-                objArrayAdd = Array_Addition(n, m) # Creation of an object from the class "Cosineh"
-                
-                Array_1 = objArrayAdd.createArray1(n, m) # Method call and result
-
                 print("\nPress any Key to return to the Operations with Arrays Menu...")
                 msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                 os.system("cls") # Clear the window
