@@ -363,16 +363,40 @@ class ArrayAddition():
         self.Array1 = Array1
         self.Array2 = Array2
 
+    # Class method
     def ArrayAdditionOp(self, Array1, Array2):
         Array3 = [] # Declaration of an array to acumulate the result of the Addition
+        
         for i in range(len(Array1)):
             Array3.append([])
             for j in range(len(Array1[0])):
                 Array3[i].append(Array1[i][j] + Array2[i][j])
         
-        for i in range(len(Array3)):
-            for j in range(len(Array3[0])):
-                Array3[i][j] = Array1[i][j] + Array2[i][j]
+        print("The result of the addition for the Array 1 and 2 is: ")
+        for row in Array3:
+            print("[", end = " ")
+            for element in row:
+                print("{:2.0f}".format(element), end = " ")
+            print("]")
+
+        return Array3 # Value returned
+
+# ------------------------------------------------------------------------------------------------------------ #
+# Creation of a class called "ArraySubstracion"
+class ArraySubstracion():
+    # Class constructor
+    def __init__(self, Array1, Array2):
+        self.Array1 = Array1
+        self.Array2 = Array2
+    
+    # Class method
+    def ArraySubstracionOp(self, Array1, Array2):
+        Array3 = [] # Declaration of an array to acumulate the result of the Substraction
+        
+        for i in range(len(Array1)):
+            Array3.append([])
+            for j in range(len(Array1[0])):
+                Array3[i].append(Array1[i][j] - Array2[i][j])
         
         print("The result of the addition for the Array 1 and 2 is: ")
         for row in Array3:
