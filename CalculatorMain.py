@@ -516,17 +516,20 @@ while(index == 1):
             
             # Option to calculate the "Addition" of 2 arrays
             if Option == 1:
-                print("First Array")
-                n = int(input("Please, insert the number of rows that you want in the Array #1: "))
-                m = int(input("Please, insert the number of columns that you want in the Array #1: "))
+                print("-----------------------")
+                print("----- First Array -----")
+                print("-----------------------")
+                n = int(input("  - Please, insert the number of rows that you want in the Array #1: "))
+                m = int(input("  - Please, insert the number of columns that you want in the Array #1: "))
 
+                print("\n------------------------------")
+                print("----- Capture of numbers -----")
+                print("------------------------------")
                 objArrayAdd = Array_Addition(n, m) # Creation of an object from the class "Cosineh"
+                
+                Array_1 = objArrayAdd.createArray1(n, m) # Method call and result
 
-                Array_1 = objArrayAdd.createArray1(n, m) # Method call
-
-                print("\nTHE FIRST ARRAY IS: " + str(Array_1)) # Result
-
-                print("\nPress any Key to return to the Basic Trigonometric Functions...")
+                print("\nPress any Key to return to the Operations with Arrays Menu...")
                 msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                 os.system("cls") # Clear the window
 

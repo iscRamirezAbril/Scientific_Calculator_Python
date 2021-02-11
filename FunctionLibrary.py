@@ -311,9 +311,22 @@ class Array_Addition():
     
     # Class method
     def createArray1(self, n, m):
-        Array1 = []
+        Array1 = [] # Declaration of an array
+
         for i in range(n):
-            a = [int(input())] * m
-            Array1.append(a)
-        
+            Array1.append([])
+            for j in range(m):
+                value = int(input("Value [{}, {}]: ".format(i + 1, j + 1)))
+                Array1[i].append(value)
+
+        print("\n---------------------")
+        print("----- ARRAY # 1 -----")
+        print("---------------------")
+        for n in Array1:
+            print("[", end = " ")
+            for element in n:
+                print("{:2.0f}".format(element), end = " ")
+            print("]")
+        print()
+
         return Array1 # Value returned
