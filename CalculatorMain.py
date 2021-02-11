@@ -517,10 +517,10 @@ while(index == 1):
         print("\n----- Second Array -----")
         n2 = int(input("  - Please, insert the number of rows that you want in the Array #2: "))
         m2 = int(input("  - Please, insert the number of columns that you want in the Array #2: "))
-        objArrayAdd = CaptureArrays(n1, m1, n2, m2) # Creation of an object from the class "CaptureArrays"
+        objArrayCaoture = CaptureArrays(n1, m1, n2, m2) # Creation of an object from the class "CaptureArrays"
         
-        Array1 = objArrayAdd.createArray1(n1, m1) # Method call and result
-        Array2 = objArrayAdd.createArray2(n2, m2) # Method call and result
+        Array1 = objArrayCaoture.createArray1(n1, m1) # Method call and result
+        Array2 = objArrayCaoture.createArray2(n2, m2) # Method call and result
         
         print("\nPress any Key to enter to the Operations with Arrays Menu...")
         msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
@@ -533,6 +533,14 @@ while(index == 1):
             
             # Option to calculate the "Addition" of 2 arrays
             if Option == 1:
+                if len(Array1) == len(Array2) and len(Array1[0]) == len(Array2[0]):
+                    print("\n----- ADDITION  -----")
+                    objArrayAdd = ArrayAddition(Array1, Array2) # Creation of an object from the class "ArrayAddition"
+                    Array3 = objArrayAdd.ArrayAdditionOp(Array1, Array2) # Method call and result
+
+                else:
+                    print("The addition of the Arrays can´t be calculate because both of them have different lengths...")
+
                 print("\nPress any Key to return to the Operations with Arrays Menu...")
                 msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                 os.system("cls") # Clear the window
