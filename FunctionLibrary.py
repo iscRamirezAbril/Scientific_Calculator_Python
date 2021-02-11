@@ -298,17 +298,22 @@ class Cosineh():
         
         return CosinehResult # Value returned
 
+                                # ----------------------------------- #
+                                # ----- Operations with Arrays  ----- #
+                                # ----------------------------------- #
 # ------------------------------------------------------------------------------------------------------------ #
-# Creation of a class called "Arctan"
-class Arctan():
+# Creation of a class called "Array_Addition"
+class Array_Addition():
     # Class constructor
-    def __init__(self, Num1):
-        self.Num1 = Num1
+    def __init__(self, n, m):
+        self.n = n
+        self.m = m
     
     # Class method
-    def ArctanOp(self, Num1):
-        ArctanResult = 0
-        for i in range(1, 21):
-            ArctanResult += Num1 ** (2 * i - 1) / ((2 * i - 1)) * ((-1) ** (i - 1))
+    def createArray1(self, n, m):
+        Array1 = []
+        for i in range(n):
+            a = [int(input())] * m
+            Array1.append(a)
         
-        return ArctanResult # Value returned
+        return Array1 # Value returned

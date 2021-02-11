@@ -20,7 +20,7 @@ while(index == 1):
     print(Fore.CYAN + "                     --- Welcome to the Scientific Calculator! :D ---                        ")
     print(Fore.CYAN + "=============================================================================================")
 
-    Option = int(input("This is the Principal Menu\n   1. Basic Math Functions\n   2. More Math Functions\n   3. Trigonometric Functions\n   4. Exit\n\nPlease, select an option: "))
+    Option = int(input("This is the Principal Menu\n   1. Basic Math Functions\n   2. More Math Functions\n   3. Trigonometric Functions\n   4. Operations with Arrays\n   5. Exit\n\nPlease, select an option: "))
 
     # Option to enter to the "Basic Math Functions" menu
     if(Option == 1):
@@ -279,7 +279,7 @@ while(index == 1):
             # ---------------------------------------- #
             # ----- Trigonometric Functions Menu ----- #
             # ---------------------------------------- #
-            Option = int(input("C. TRIGONOMETRIC FUNCTIONS\n   1. Basic Trigonometric Functions\n   2. Inverse Trigonometric Functions\n   3. Hiperbolic Trigonometric Functions\n   4. Return\n\nPlease, select an option: "))
+            Option = int(input("C. TRIGONOMETRIC FUNCTIONS\n   1. Basic Trigonometric Functions\n   2. Hiperbolic Trigonometric Functions\n   3. Return\n\nPlease, select an option: "))
             
             # Option to enter to the "Basic Trigonometric Functions" Menu
             if Option == 1:
@@ -387,55 +387,15 @@ while(index == 1):
                         index1 = 0
                         os.system("cls") # Clear the window
 
-            # Option to enter to the "Inverse Trigonometric Functions" Menu
+            # Option to enter to the "Hiperbolic Trigonometric Functions" Menu
             elif Option == 2:
-                index2 = 0
-                os.system("cls") # Clear the window
-                while(index2 == 0):
-                    # ------------------------------------------------ #
-                    # ----- Inverse Trigonometric Functions Menu ----- #
-                    # ------------------------------------------------ #
-                    Option = int(input("II. INVERSE TRIGONOMETRIC FUNCTIONS\n   1. Arcsin(x)\n   2. Arccos(x)\n   3. Arctan(x)\n   4. Return\n\nPlease, select an option: "))
-                    if Option == 1:
-                        print("Pending...")
-                    elif Option == 2:
-                        print("Pending...")
-                    
-                    # Option to calculate the "Arctan(x)" of a number
-                    elif Option == 3:
-                        Num1 = float(input("- Insert a number to calculate it Arctan(x): "))
-
-                        objArctan = Arctan(Num1) # Creation of an object from the class "Arctan"
-
-                        ArctanResult = objArctan.ArctanOp(Num1)
-
-                        print("\nTHE ARCTAN [IN RADIANS] IS: " + str(ArctanResult)) # Result
-
-                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
-                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                        os.system("cls") # Clear the window
-
-                    elif Option == 4:
-                        print("Press any Key to return to the Trigonometric Functions Menu...")
-                        msvcrt.getwch() # Press a key before returning to the main menu
-                        break
-
-                    # If the option isn't valid
-                    else:
-                        print("\nPlease, select a valid option...")
-                        print("Press any key to try again :)")
-                        msvcrt.getwch() # Press a key before returning to the Inverse Trigonometric Functions Menu
-                        index1 = 0
-                        os.system("cls") # Clear the window
-
-            elif Option == 3:
                 index2 = 0
                 os.system("cls") # Clear the window
                 while(index2 == 0):
                     # --------------------------------------------------- #
                     # ----- Hiperbolic Trigonometric Functions Menu ----- #
                     # --------------------------------------------------- #
-                    Option = int(input("III. HIPERBOLIC TRIGONOMETRIC FUNCTIONS\n   1. sinh(x)\n   2. cosh(x)\n   3. tanh(x)\n   4. csch(x)\n   5. sech(x)\n   6. coth(x)\n   7. Return\n\nPlease, select an option: "))
+                    Option = int(input("II. HIPERBOLIC TRIGONOMETRIC FUNCTIONS\n   1. sinh(x)\n   2. cosh(x)\n   3. tanh(x)\n   4. csch(x)\n   5. sech(x)\n   6. coth(x)\n   7. Return\n\nPlease, select an option: "))
                     
                     # Option to calculate the "Sineh(x)" of a number
                     if Option == 1:
@@ -538,14 +498,59 @@ while(index == 1):
                         index1 = 0
                         os.system("cls") # Clear the window
 
-            elif Option == 4:
+            elif Option == 3:
                 print("Press any Key to return to the Main Menu...")
                 msvcrt.getwch() # Press a key before returning to the main menu
                 break
         os.system("cls") # Clear the window
 
+    # Option to enter to the "Operations with Arrays" Menu
+    elif Option == 4:
+        index2 = 0
+        os.system("cls") # Clear the window
+        while(index2 == 0):
+            # --------------------------------------- #
+            # ----- Operations with Arrays Menu ----- #
+            # --------------------------------------- #
+            Option = int(input("III. OPERATIONS WITH ARRAYS\n   1. Addition\n   2. Substraction\n   3. Multiplication\n   4. Return\n\nPlease, select an option: "))
+            
+            # Option to calculate the "Addition" of 2 arrays
+            if Option == 1:
+                print("First Array")
+                n = int(input("Please, insert the number of rows that you want in the Array #1: "))
+                m = int(input("Please, insert the number of columns that you want in the Array #1: "))
+
+                objArrayAdd = Array_Addition(n, m) # Creation of an object from the class "Cosineh"
+
+                Array_1 = objArrayAdd.createArray1(n, m) # Method call
+
+                print("\nTHE FIRST ARRAY IS: " + str(Array_1)) # Result
+
+                print("\nPress any Key to return to the Basic Trigonometric Functions...")
+                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                os.system("cls") # Clear the window
+
+            elif Option == 2:
+                print("Pending...")
+            elif Option == 3:
+                print("Pending...")
+                
+            # Option to return to the Main Menu
+            elif Option == 4:
+                print("Press any Key to return to the Operations with Arrays Menu...")
+                msvcrt.getwch() # Press a key before returning to the main menu
+                break
+
+            # If the option isn't valid
+            else:
+                print("\nPlease, select a valid option...")
+                print("Press any key to try again :)")
+                msvcrt.getwch() # Press a key before returning to the Inverse Trigonometric Functions Menu
+                index1 = 0
+                os.system("cls") # Clear the window
+
     # Close the program
-    elif(Option == 4):
+    elif(Option == 5):
         print("\nThanks for using this program! See ya soon! n.n/")
         msvcrt.getwch() # Press a key to close the program
         sys.exit() # Close the window
