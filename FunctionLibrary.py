@@ -398,7 +398,92 @@ class ArraySubstracion():
             for j in range(len(Array1[0])):
                 Array3[i].append(Array1[i][j] - Array2[i][j])
         
-        print("The result of the addition for the Array 1 and 2 is: ")
+        print("The result of the substraction for the Array 1 and 2 is: ")
+        for row in Array3:
+            print("[", end = " ")
+            for element in row:
+                print("{:2.0f}".format(element), end = " ")
+            print("]")
+
+        return Array3 # Value returned
+
+# ------------------------------------------------------------------------------------------------------------ #
+# Creation of a class called "ArrayMultiplication"
+class ArrayMultiplication():
+    # Class constructor
+    def __init__(self, Array1, Array2):
+        self.Array1 = Array1
+        self.Array2 = Array2
+    
+    # Class method
+    def ArrayMultiplicationOp(self, Array1, Array2):
+        Array3 = [] # Declaration of an array to acumulate the result of the Multiplication
+
+        # Creation of an array of ceros
+        for i in range(len(Array1)):
+            Array3.append([])
+            for j in range(len(Array1[0])):
+                Array3[i].append(0)
+
+        for i in range(len(Array1)):
+            for j in range(len(Array2[0])):
+                for k in range(len(Array1[0])):
+                    Array3[i][j] += Array1[i][k] * Array2[k][j]
+        
+        print("The result of the multiplication for the Array 1 and 2 is: ")
+        for row in Array3:
+            print("[", end = " ")
+            for element in row:
+                print("{:2.0f}".format(element), end = " ")
+            print("]")
+
+        return Array3 # Value returned
+
+# ------------------------------------------------------------------------------------------------------------ #
+# Creation of a class called "ArrayMultScalar"
+class ArrayMultScalar():
+    # Class constructor
+    def __init__(self, Array, Scalar):
+        self.Array = Array
+        self.Scalar = Scalar
+    
+    # Class method
+    def ArrayMultScalarOp(self, Array, Scalar):
+        Array3 = [] # Declaration of an array to acumulate the Multiplication
+
+        # Creation of an array of ceros
+        for i in range(len(Array)):
+            Array3.append([])
+            for j in range(len(Array[0])):
+                Array3[i].append(Array[i][j] * Scalar)
+        
+        print("The result of the multiplication of the array with a scalar is: ")
+        for row in Array3:
+            print("[", end = " ")
+            for element in row:
+                print("{:2.0f}".format(element), end = " ")
+            print("]")
+
+        return Array3 # Value returned
+
+# ------------------------------------------------------------------------------------------------------------ #
+# Creation of a class called "ArrayTransposed"
+class ArrayTransposed():
+    # Class constructor
+    def __init__(self, Array):
+        self.Array = Array
+    
+    # Class method
+    def ArrayTransposedOp(self, Array):
+        Array3 = [] # Declaration of an array to acumulate the Transposed array
+
+        # Creation of an array of ceros
+        for i in range(len(Array)):
+            Array3.append([])
+            for j in range(len(Array[0])):
+                Array3[i].append(Array[j][i])
+        
+        print("The result of the transpose of the array: ")
         for row in Array3:
             print("[", end = " ")
             for element in row:

@@ -517,10 +517,10 @@ while(index == 1):
         print("\n----- Second Array -----")
         n2 = int(input("  - Please, insert the number of rows that you want in the Array #2: "))
         m2 = int(input("  - Please, insert the number of columns that you want in the Array #2: "))
-        objArrayCaoture = CaptureArrays(n1, m1, n2, m2) # Creation of an object from the class "CaptureArrays"
+        objArrayCapture = CaptureArrays(n1, m1, n2, m2) # Creation of an object from the class "CaptureArrays"
         
-        Array1 = objArrayCaoture.createArray1(n1, m1) # Method call and result
-        Array2 = objArrayCaoture.createArray2(n2, m2) # Method call and result
+        Array1 = objArrayCapture.createArray1(n1, m1) # Method call and result
+        Array2 = objArrayCapture.createArray2(n2, m2) # Method call and result
         
         print("\nPress any Key to enter to the Operations with Arrays Menu...")
         msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
@@ -529,7 +529,7 @@ while(index == 1):
             # --------------------------------------- #
             # ----- Operations with Arrays Menu ----- #
             # --------------------------------------- #
-            Option = int(input("\nIII. OPERATIONS WITH ARRAYS\n   1. Addition\n   2. Substraction\n   3. Multiplication\n   4. Return\n\nPlease, select an option: "))
+            Option = int(input("\nIII. OPERATIONS WITH ARRAYS\n   1. Addition\n   2. Substraction\n   3. Multiplication\n   4. Multiplication of an array with scalar\n   5. Transpose of an array\n   6. Return\n\nPlease, select an option: "))
             
             # Option to calculate the "Addition" of 2 arrays
             if Option == 1:
@@ -559,12 +559,68 @@ while(index == 1):
                 msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
                 os.system("cls") # Clear the window
 
-            # Option to calculate the "Multiplication" of one array with a
+            # Option to calculate the "Multiplication" of 2 arrays
             elif Option == 3:
-                print("Pending...")
-                
-            # Option to return to the Main Menu
+                print("\n----- MULTIPLICATION -----")
+                objArrayMult = ArrayMultiplication(Array1, Array2) # Creation of an object from the class "ArrayMultiplication"
+                Array3 = objArrayMult.ArrayMultiplicationOp(Array1, Array2) # Method call and result
+
+                print("\nPress any Key to return to the Operations with Arrays Menu...")
+                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                os.system("cls") # Clear the window
+
+            # Option to calculate the "Multiplication of an array with scalar"
             elif Option == 4:
+                Option = int(input("Which Array want to multiplicate with scalar? (1 / 2): "))
+
+                # If the option is 1
+                if Option == 1:
+                    print("\n----- MULTIPLICATION OF AN ARRAY WITH SCALAR -----")
+                    Scalar = int(input("Please, insert the value for the scalar: "))
+
+                    objArrayMultScalar = ArrayMultScalar(Array1, Scalar) # Creation of an object from the class "ArrayMultScalar"
+                    Array3 = objArrayMultScalar.ArrayMultScalarOp(Array1, Scalar) # Method call and result
+
+                # If the option is 2
+                elif Option == 2:
+                    print("\n----- MULTIPLICATION OF AN ARRAY WITH SCALAR -----")
+                    Scalar = int(input("Please, insert the value for the scalar: "))
+
+                    objArrayMultScalar = ArrayMultScalar(Array2, Scalar) # Creation of an object from the class "ArrayMultScalar"
+                    Array3 = objArrayMultScalar.ArrayMultScalarOp(Array2, Scalar) # Method call and result
+                
+                else:
+                    print("Please, insert a valid option...")
+
+                print("\nPress any Key to return to the Operations with Arrays Menu...")
+                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                os.system("cls") # Clear the window
+
+            # Option to calculate the "Transpose" of an array
+            elif Option == 5:
+                Option = int(input("Which Array want to calculate it Transpose? (1 / 2): "))
+
+                # If the option is 1
+                if Option == 1:
+                    print("\n----- TRANSPOSE -----")
+                    objArrayTranspose = ArrayTransposed(Array1) # Creation of an object from the class "ArrayTransposed"
+                    Array3 = objArrayTranspose.ArrayTransposedOp(Array1) # Method call and result
+
+                # If the option is 2
+                elif Option == 2:
+                    print("\n----- TRANSPOSE -----")
+                    objArrayTranspose = ArrayTransposed(Array2) # Creation of an object from the class "ArrayTransposed"
+                    Array3 = objArrayTranspose.ArrayTransposedOp(Array2) # Method call and result
+                
+                else:
+                    print("Please, insert a valid option...")
+
+                print("\nPress any Key to return to the Operations with Arrays Menu...")
+                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+                os.system("cls") # Clear the window
+
+            # Option to return to the Main Menu
+            elif Option == 6:
                 print("Press any Key to return to the Operations with Arrays Menu...")
                 msvcrt.getwch() # Press a key before returning to the main menu
                 break
