@@ -446,23 +446,6 @@ while(index == 1):
     elif Option == 4:
         index2 = 0
         os.system("cls") # Clear the window
-        print("----- CAPTURE OF THE ARRAYS -----")
-        print("For some operations, you need to capture 2 arrays...")
-        print("\n----- First Array -----")
-        n1 = int(input("  - Please, insert the number of rows that you want in the Array #1: "))
-        m1 = int(input("  - Please, insert the number of columns that you want in the Array #1: "))
-
-        print("\n----- Second Array -----")
-        n2 = int(input("  - Please, insert the number of rows that you want in the Array #2: "))
-        m2 = int(input("  - Please, insert the number of columns that you want in the Array #2: "))
-        objArrayCapture = CaptureArrays() # Creation of an object from the class "CaptureArrays"
-        
-        Array1 = objArrayCapture.createArray1(n1, m1) # Method call and result
-        Array2 = objArrayCapture.createArray2(n2, m2) # Method call and result
-        
-        print("\nPress any Key to enter to the Operations with Arrays Menu...")
-        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-
         while(index2 == 0):
             # --------------------------------------- #
             # ----- Operations with Arrays Menu ----- #
@@ -471,6 +454,20 @@ while(index == 1):
             
             # Option to calculate the "Addition" of 2 arrays
             if Option == 1:
+                print("*** IMPORTANT!! ***   \nThe lengths and dimensions of both Arrays might be the same if you want to calculate the addition...")
+                print("\n----- CAPTURE OF THE ARRAYS -----")
+                print("----- First Array -----")
+                n1 = int(input("  - Please, insert the number of rows that you want in the Array #1: "))
+                m1 = int(input("  - Please, insert the number of columns that you want in the Array #1: "))
+
+                print("\n----- Second Array -----")
+                n2 = int(input("  - Please, insert the number of rows that you want in the Array #2: "))
+                m2 = int(input("  - Please, insert the number of columns that you want in the Array #2: "))
+                objArrayCapture = CaptureArrays() # Creation of an object from the class "CaptureArrays"
+                
+                Array1 = objArrayCapture.createArray1(n1, m1) # Method call and result
+                Array2 = objArrayCapture.createArray2(n2, m2) # Method call and result
+
                 if len(Array1) == len(Array2) and len(Array1[0]) == len(Array2[0]):
                     print("\n----- ADDITION  -----")
                     objArrayAdd = ArrayAddition() # Creation of an object from the class "ArrayAddition"
@@ -479,12 +476,24 @@ while(index == 1):
                 else:
                     print("The addition of the Arrays can´t be calculate because both of them have different lengths...")
 
-                print("\nPress any Key to return to the Operations with Arrays Menu...")
-                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                os.system("cls") # Clear the window
+                ReadKey() # Method for returning to the Operations with Arrays Menu
 
             # Option to calculate the "Substraction" of 2 arrays
             elif Option == 2:
+                print("*** IMPORTANT!! ***   \nThe lengths and dimensions of both Arrays might be the same if you want to calculate the substraction...")
+                print("\n----- CAPTURE OF THE ARRAYS -----")
+                print("----- First Array -----")
+                n1 = int(input("  - Please, insert the number of rows that you want in the Array #1: "))
+                m1 = int(input("  - Please, insert the number of columns that you want in the Array #1: "))
+
+                print("\n----- Second Array -----")
+                n2 = int(input("  - Please, insert the number of rows that you want in the Array #2: "))
+                m2 = int(input("  - Please, insert the number of columns that you want in the Array #2: "))
+                objArrayCapture = CaptureArrays() # Creation of an object from the class "CaptureArrays"
+                
+                Array1 = objArrayCapture.createArray1(n1, m1) # Method call and result
+                Array2 = objArrayCapture.createArray2(n2, m2) # Method call and result
+
                 if len(Array1) == len(Array2) and len(Array1[0]) == len(Array2[0]):
                     print("\n----- SUBSTRACTION -----")
                     objArraySubs = ArraySubstracion() # Creation of an object from the class "ArraySubstraction"
@@ -493,69 +502,58 @@ while(index == 1):
                 else:
                     print("The substraction of the Arrays can´t be calculate because both of them have different lengths...")
                 
-                print("\nPress any Key to return to the Operations with Arrays Menu...")
-                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                os.system("cls") # Clear the window
+                ReadKey() # Method for returning to the Operations with Arrays Menu
 
             # Option to calculate the "Multiplication" of 2 arrays
             elif Option == 3:
                 print("\n----- MULTIPLICATION -----")
+                print("\n----- CAPTURE OF THE ARRAYS -----")
+                print("----- First Array -----")
+                n1 = int(input("  - Please, insert the number of rows that you want in the Array #1: "))
+                m1 = int(input("  - Please, insert the number of columns that you want in the Array #1: "))
+
+                print("\n----- Second Array -----")
+                n2 = int(input("  - Please, insert the number of rows that you want in the Array #2: "))
+                m2 = int(input("  - Please, insert the number of columns that you want in the Array #2: "))
+                objArrayCapture = CaptureArrays() # Creation of an object from the class "CaptureArrays"
+                
+                Array1 = objArrayCapture.createArray1(n1, m1) # Method call and result
+                Array2 = objArrayCapture.createArray2(n2, m2) # Method call and result
+
                 objArrayMult = ArrayMultiplication() # Creation of an object from the class "ArrayMultiplication"
                 Array3 = objArrayMult.ArrayMultiplicationOp(Array1, Array2) # Method call and result
 
-                print("\nPress any Key to return to the Operations with Arrays Menu...")
-                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                os.system("cls") # Clear the window
+                ReadKey() # Method for returning to the Operations with Arrays Menu
 
             # Option to calculate the "Multiplication of an array with scalar"
             elif Option == 4:
-                Option = int(input("Which Array want to multiplicate with scalar? (1 / 2): "))
-
-                # If the option is 1
-                if Option == 1:
-                    print("\n----- MULTIPLICATION OF AN ARRAY WITH SCALAR -----")
-                    Scalar = int(input("Please, insert the value for the scalar: "))
-
-                    objArrayMultScalar = ArrayMultScalar() # Creation of an object from the class "ArrayMultScalar"
-                    Array3 = objArrayMultScalar.ArrayMultScalarOp(Array1, Scalar) # Method call and result
-
-                # If the option is 2
-                elif Option == 2:
-                    print("\n----- MULTIPLICATION OF AN ARRAY WITH SCALAR -----")
-                    Scalar = int(input("Please, insert the value for the scalar: "))
-
-                    objArrayMultScalar = ArrayMultScalar() # Creation of an object from the class "ArrayMultScalar"
-                    Array3 = objArrayMultScalar.ArrayMultScalarOp(Array2, Scalar) # Method call and result
+                print("----- CAPTURE OF THE ARRAY -----")
+                n1 = int(input("  - Please, insert the number of rows that you want in the Array #1: "))
+                m1 = int(input("  - Please, insert the number of columns that you want in the Array #1: "))
                 
-                else:
-                    print("Please, insert a valid option...")
+                Array1 = objArrayCapture.createArray1(n1, m1) # Method call and result
 
-                print("\nPress any Key to return to the Operations with Arrays Menu...")
-                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                os.system("cls") # Clear the window
+                print("\n----- MULTIPLICATION OF AN ARRAY WITH SCALAR -----")
+                Scalar = int(input("Please, insert the value for the scalar: "))
+
+                objArrayMultScalar = ArrayMultScalar() # Creation of an object from the class "ArrayMultScalar"
+                Array3 = objArrayMultScalar.ArrayMultScalarOp(Array1, Scalar) # Method call and result
+
+                ReadKey() # Method for returning to the Operations with Arrays Menu
 
             # Option to calculate the "Transpose" of an array
             elif Option == 5:
-                Option = int(input("Which Array want to calculate it Transpose? (1 / 2): "))
-
-                # If the option is 1
-                if Option == 1:
-                    print("\n----- TRANSPOSE -----")
-                    objArrayTranspose = ArrayTransposed() # Creation of an object from the class "ArrayTransposed"
-                    Array3 = objArrayTranspose.ArrayTransposedOp(Array1) # Method call and result
-
-                # If the option is 2
-                elif Option == 2:
-                    print("\n----- TRANSPOSE -----")
-                    objArrayTranspose = ArrayTransposed() # Creation of an object from the class "ArrayTransposed"
-                    Array3 = objArrayTranspose.ArrayTransposedOp(Array2) # Method call and result
+                print("----- CAPTURE OF THE ARRAY -----")
+                n1 = int(input("  - Please, insert the number of rows that you want in the Array #1: "))
+                m1 = int(input("  - Please, insert the number of columns that you want in the Array #1: "))
                 
-                else:
-                    print("Please, insert a valid option...")
+                Array1 = objArrayCapture.createArray1(n1, m1) # Method call and result
 
-                print("\nPress any Key to return to the Operations with Arrays Menu...")
-                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                os.system("cls") # Clear the window
+                print("\n----- TRANSPOSE -----")
+                objArrayTranspose = ArrayTransposed() # Creation of an object from the class "ArrayTransposed"
+                Array3 = objArrayTranspose.ArrayTransposedOp(Array1) # Method call and result
+
+                ReadKey() # Method for returning to the Operations with Arrays Menu
 
             # Option to return to the Main Menu
             elif Option == 6:

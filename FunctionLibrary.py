@@ -308,7 +308,7 @@ class Cosineh():
                                 # ----- Operations with Arrays  ----- #
                                 # ----------------------------------- #
 # ------------------------------------------------------------------------------------------------------------ #
-# Creation of a class called "Array_Addition"
+# Creation of a class called "CaptureArray1"
 class CaptureArrays():
     # Class constructor
     # def __init__(self, n1, m1, n2, m2):
