@@ -1,9 +1,9 @@
 # <---------------------> #
 # <----- Libraries -----> #
 # <---------------------> #
-import os
-import sys
-import msvcrt
+import os # "Various Operating System Interfaces" Consists mainly of functions for creating and managing running processes or file system content (files and directories).
+import sys # System-specific parameters and functions
+import msvcrt # Library will help to detect a key
 import math
 from FunctionLibrary import * # My library
 from colorama import init, Fore # This is the library that will help with the text color.
@@ -36,7 +36,7 @@ while(index == 1):
             if Option == 1:
                 Num1 = float(input("- Insert the first number: "))
                 Num2 = float(input("- Insert the second number: "))
-                objAdd = Addition(Num1, Num2) # Creation of an object from the class "Addition"
+                objAdd = Addition() # Creation of an object from the class "Addition"
                 AddResult = objAdd.AddOp(Num1, Num2) # Method call
                 print("\nTHE ANSWER OF THE ADDITION IS: " + str(AddResult)) # Result
 
@@ -46,7 +46,7 @@ while(index == 1):
             elif Option == 2:
                 Num1 = float(input("- Insert the first number: "))
                 Num2 = float(input("- Insert the second number: "))
-                objSubs = Substraction(Num1, Num2) # Creation of an object from the class "Substraction"
+                objSubs = Substraction() # Creation of an object from the class "Substraction"
                 SubsResult = objSubs.SubsOp(Num1, Num2) # Method call
                 print("\nTHE ANSWER OF THE SUBSTRACTION IS: " + str(SubsResult)) # Result
 
@@ -56,7 +56,7 @@ while(index == 1):
             elif Option == 3:
                 Num1 = float(input("- Insert the first number: "))
                 Num2 = float(input("- Insert the second number: "))
-                objMult = Multiplication(Num1, Num2) # Creation of an object from the class "Multiplication"
+                objMult = Multiplication() # Creation of an object from the class "Multiplication"
                 MultResult = objMult.MultOp(Num1, Num2) # Method call
                 print("\nTHE ANSWER OF THE MULTIPLICATION IS: " + str(MultResult)) # Result
 
@@ -71,7 +71,7 @@ while(index == 1):
                     print("\nMATH ERROR!...")
                     ReadKey() # Method for returning to the Basic Math Functions Menu
                 else:
-                    objDiv = Division(Num1, Num2) # Creation of an object from the class "Division"
+                    objDiv = Division() # Creation of an object from the class "Division"
                     DivResult = objDiv.DivOp(Num1, Num2) # Method call
                     print("\nTHE ANSWER OF THE DIVIISON IS: " + str(DivResult)) # Result
                     
@@ -85,7 +85,7 @@ while(index == 1):
                     print("\nMATH ERROR!...")
                     ReadKey() # Method for returning to the Basic Math Functions Menu
                 else:
-                    objSqrRoot = Square_Root(Num1) # Creation of an object from the class "Square_Root"
+                    objSqrRoot = Square_Root() # Creation of an object from the class "Square_Root"
                     SqrRootResult = objSqrRoot.SquRootOp(Num1) # Method call
                     print("\nTHE ANSWER OF THE SQUARE ROOT IS: " + str(SqrRootResult)) # Result
 
@@ -95,7 +95,7 @@ while(index == 1):
             elif Option == 6:
                 Num1 = float(input("- Insert the number that you want to calculate it cube root: "))
 
-                objCubeRoot = Cube_Root(Num1) # Creation of an object from the class "Cube_Root"
+                objCubeRoot = Cube_Root() # Creation of an object from the class "Cube_Root"
                 CubeRootResult = objCubeRoot.CubeRootOp(Num1) # Method call
                 print("\nTHE ANSWER OF THE CUBE ROOT IS: " + str(CubeRootResult)) # Result
 
@@ -129,7 +129,7 @@ while(index == 1):
             if Option == 1:
                 Num1 = float(input("- Insert the number that you want to elevate at square power: "))
 
-                objNumSqu = Num_Squr(Num1) # Creation of an object from the class "Num_Squr"
+                objNumSqu = Num_Squr() # Creation of an object from the class "Num_Squr"
                 NumSqurResult = objNumSqu.NumSqurOp(Num1) # Method call
                 print("\nTHE SQUARE OF THE NUMBER IS: " + str(NumSqurResult)) # Result
 
@@ -139,7 +139,7 @@ while(index == 1):
             elif Option == 2:
                 Num1 = float(input("- Insert the number that you want to elevate at cube power: "))
 
-                objNumCube = Num_Cubed(Num1) # Creation of an object from the class "Num_Cubed"
+                objNumCube = Num_Cubed() # Creation of an object from the class "Num_Cubed"
                 NumSqurResult = objNumCube.NumCubedOp(Num1) # Method call
                 print("\nTHE CUBE OF THE NUMBER IS: " + str(NumSqurResult)) # Result
 
@@ -150,7 +150,7 @@ while(index == 1):
                 Num1 = float(input("- Insert the number that you want to elevate at x power: "))
                 Num2 = float(input("- Insert the x number (the exponent): "))
 
-                objNumRaisedX = Num_Raisedx(Num1, Num2) # Creation of an object from the class "Num_Raisedx"
+                objNumRaisedX = Num_Raisedx() # Creation of an object from the class "Num_Raisedx"
                 NumRaisedXResult = objNumRaisedX.NumRaisedXOp(Num1, Num2) # Method call
                 print("\nTHE ANSWER IS: " + str(NumRaisedXResult)) # Result
 
@@ -160,7 +160,7 @@ while(index == 1):
             elif Option == 4:
                 Num1 = float(input("- Insert the number that you want to elevate at -1 power: "))
 
-                objNumNeg1 = Num_Neg1(Num1) # Creation of an object from the class "Num_Neg1"
+                objNumNeg1 = Num_Neg1() # Creation of an object from the class "Num_Neg1"
                 NumNeg1Result = objNumNeg1.NumNeg1Op(Num1) # Method call
                 print("\nTHE ANSWER IS: " + str(NumNeg1Result)) # Result
 
@@ -170,7 +170,7 @@ while(index == 1):
             elif Option == 5:
                 Num1 = float(input("- Insert the number that you want to calculate it percentage: "))
 
-                objPercentage = Percentage(Num1) # Creation of an object from the class "Percentage"
+                objPercentage = Percentage() # Creation of an object from the class "Percentage"
                 PercentageResult = objPercentage.PercentageOp(Num1) # Method call
                 print("\nTHE PERCENTAGE IS: " + str(PercentageResult)) # Result
 
@@ -184,7 +184,7 @@ while(index == 1):
                     print("\nTHE FACTORIAL IS: 1") # Result
                     ReadKey() # Method for returning to the More Math Functions Menu
                 else:
-                    objFactorial = Factorial(Num1) # Creation of an object from the class "Factorial"
+                    objFactorial = Factorial() # Creation of an object from the class "Factorial"
                     FactorialResult = objFactorial.FactorialOp(Num1) # Method call
                     print("\nTHE FACTORIAL IS: " + str(FactorialResult)) # Result
 
@@ -198,7 +198,7 @@ while(index == 1):
                     print("\nMATH ERROR!...")
                     ReadKey() # Method for returning to the More Math Functions Menu
                 else:
-                    objLogarithm = Logarithm(Num1) # Creation of an object from the class "Logarithm"
+                    objLogarithm = Logarithm() # Creation of an object from the class "Logarithm"
                     LogarithmResult = objLogarithm.LogarithmOp(Num1) # Method call
                     print("\nTHE LOGARITHM IS: " + str(LogarithmResult)) # Result
 
@@ -212,7 +212,7 @@ while(index == 1):
                     print("\nMATH ERROR!...")
                     ReadKey() # Method for returning to the More Math Functions Menu
                 else:
-                    objNatLogarithm = Natural_Logarithm(Num1) # Creation of an object from the class "Natural_Logarithm"
+                    objNatLogarithm = Natural_Logarithm() # Creation of an object from the class "Natural_Logarithm"
                     NaturalLogarithmResult = objNatLogarithm.NaturalLogarithmOp(Num1) # Method call
                     print("\nTHE NATURAL LOGARITHM IS: " + str(NaturalLogarithmResult)) # Result
 
@@ -257,7 +257,7 @@ while(index == 1):
                     if Option == 1:
                         Num1 = float(input("- Insert a number to calculate it Sine(x): "))
 
-                        objSine = Sine(Num1) # Creation of an object from the class "Sine"
+                        objSine = Sine() # Creation of an object from the class "Sine"
                         SineResult = objSine.SineOp(Num1) # Method call
                         print("\nTHE SINE [IN RADIANS] IS: " + str(SineResult)) # Result
 
@@ -267,7 +267,7 @@ while(index == 1):
                     elif Option == 2:
                         Num1 = float(input("- Insert a number to calculate it Cosine(x): "))
 
-                        objCosine = Cosine(Num1) # Creation of an object from the class "Cosine"
+                        objCosine = Cosine() # Creation of an object from the class "Cosine"
                         CosineResult = objCosine.CosineOp(Num1) # Method call
                         print("\nTHE COSINE [IN RADIANS] IS: " + str(CosineResult)) # Result
 
@@ -277,8 +277,8 @@ while(index == 1):
                     elif Option == 3:
                         Num1 = float(input("- Insert a number to calculate it Tangent(x): "))
 
-                        objSine = Sine(Num1) # Creation of an object from the class "Sine"
-                        objCosine = Cosine(Num1) # Creation of an object from the class "Cosine"
+                        objSine = Sine() # Creation of an object from the class "Sine"
+                        objCosine = Cosine() # Creation of an object from the class "Cosine"
 
                         TangentResult = objSine.SineOp(Num1) / objCosine.CosineOp(Num1) # Method call
                         print("\nTHE TANGENT [IN RADIANS] IS: " + str(TangentResult)) # Result
@@ -289,8 +289,8 @@ while(index == 1):
                     elif Option == 4:
                         Num1 = float(input("- Insert a number to calculate it Secant(x): "))
 
-                        objSine = Sine(Num1) # Creation of an object from the class "Sine"
-                        objCosine = Cosine(Num1) # Creation of an object from the class "Cosine"
+                        objSine = Sine() # Creation of an object from the class "Sine"
+                        objCosine = Cosine() # Creation of an object from the class "Cosine"
 
                         SecantResult = objSine.SineOp(Num1) / objCosine.CosineOp(Num1) # Method call
                         print("\nTHE SECANT [IN RADIANS] IS: " + str(SecantResult)) # Result
@@ -301,8 +301,8 @@ while(index == 1):
                     elif Option == 5:
                         Num1 = float(input("- Insert a number to calculate it Cosecant(x): "))
 
-                        objSine = Sine(Num1) # Creation of an object from the class "Sine"
-                        objCosine = Cosine(Num1) # Creation of an object from the class "Cosine"
+                        objSine = Sine() # Creation of an object from the class "Sine"
+                        objCosine = Cosine() # Creation of an object from the class "Cosine"
 
                         CotangentResult = objCosine.CosineOp(Num1) / objSine.SineOp(Num1) # Method call
                         CosecantResult = CotangentResult / objCosine.CosineOp(Num1)
@@ -314,8 +314,8 @@ while(index == 1):
                     elif Option == 6:
                         Num1 = float(input("- Insert a number to calculate it Cosecant(x): "))
 
-                        objSine = Sine(Num1) # Creation of an object from the class "Sine"
-                        objCosine = Cosine(Num1) # Creation of an object from the class "Cosine"
+                        objSine = Sine() # Creation of an object from the class "Sine"
+                        objCosine = Cosine() # Creation of an object from the class "Cosine"
 
                         CotangentResult = objCosine.CosineOp(Num1) / objSine.SineOp(Num1) # Method call
 
@@ -351,7 +351,7 @@ while(index == 1):
                     if Option == 1:
                         Num1 = float(input("- Insert a number to calculate it Sineh(x): "))
 
-                        objSineh = Sineh(Num1) # Creation of an object from the class "Sineh"
+                        objSineh = Sineh() # Creation of an object from the class "Sineh"
 
                         SinehResult = objSineh.SinehOp(Num1) # Method call
 
@@ -363,7 +363,7 @@ while(index == 1):
                     elif Option == 2:
                         Num1 = float(input("- Insert a number to calculate it Cosineh(x): "))
 
-                        objCosineh = Cosineh(Num1) # Creation of an object from the class "Cosineh"
+                        objCosineh = Cosineh() # Creation of an object from the class "Cosineh"
 
                         CosinehResult = objCosineh.CosinehOp(Num1) # Method call
 
@@ -375,8 +375,8 @@ while(index == 1):
                     elif Option == 3:
                         Num1 = float(input("- Insert a number to calculate it Tangenth(x): "))
 
-                        objSineh = Sineh(Num1) # Creation of an object from the class "Sineh"
-                        objCosineh = Cosineh(Num1) # Creation of an object from the class "Cosineh"
+                        objSineh = Sineh() # Creation of an object from the class "Sineh"
+                        objCosineh = Cosineh() # Creation of an object from the class "Cosineh"
 
                         TangenthResult = objSineh.SinehOp(Num1) / objCosineh.CosinehOp(Num1) # Method call
 
@@ -388,7 +388,7 @@ while(index == 1):
                     elif Option == 4:
                         Num1 = float(input("- Insert a number to calculate it Cosecanth(x): "))
 
-                        objSineh = Sineh(Num1) # Creation of an object from the class "Sineh"
+                        objSineh = Sineh() # Creation of an object from the class "Sineh"
 
                         CosecanthResult = 1 / objSineh.SinehOp(Num1) # Method call
 
@@ -400,7 +400,7 @@ while(index == 1):
                     elif Option == 5:
                         Num1 = float(input("- Insert a number to calculate it Secanth(x): "))
 
-                        objCosineh = Cosineh(Num1) # Creation of an object from the class "Cosineh"
+                        objCosineh = Cosineh() # Creation of an object from the class "Cosineh"
 
                         SecanthResult = 1 / objCosineh.CosinehOp(Num1) # Method call
 
@@ -412,8 +412,8 @@ while(index == 1):
                     elif Option == 6:
                         Num1 = float(input("- Insert a number to calculate it Cotangenth(x): "))
 
-                        objSineh = Sineh(Num1) # Creation of an object from the class "Sineh"
-                        objCosineh = Cosineh(Num1) # Creation of an object from the class "Cosineh"
+                        objSineh = Sineh() # Creation of an object from the class "Sineh"
+                        objCosineh = Cosineh() # Creation of an object from the class "Cosineh"
 
                         TangenthResult = objSineh.SinehOp(Num1) / objCosineh.CosinehOp(Num1) # Method call
                         ContangenthResult = 1 / TangenthResult
@@ -455,7 +455,7 @@ while(index == 1):
         print("\n----- Second Array -----")
         n2 = int(input("  - Please, insert the number of rows that you want in the Array #2: "))
         m2 = int(input("  - Please, insert the number of columns that you want in the Array #2: "))
-        objArrayCapture = CaptureArrays(n1, m1, n2, m2) # Creation of an object from the class "CaptureArrays"
+        objArrayCapture = CaptureArrays() # Creation of an object from the class "CaptureArrays"
         
         Array1 = objArrayCapture.createArray1(n1, m1) # Method call and result
         Array2 = objArrayCapture.createArray2(n2, m2) # Method call and result
@@ -473,7 +473,7 @@ while(index == 1):
             if Option == 1:
                 if len(Array1) == len(Array2) and len(Array1[0]) == len(Array2[0]):
                     print("\n----- ADDITION  -----")
-                    objArrayAdd = ArrayAddition(Array1, Array2) # Creation of an object from the class "ArrayAddition"
+                    objArrayAdd = ArrayAddition() # Creation of an object from the class "ArrayAddition"
                     Array3 = objArrayAdd.ArrayAdditionOp(Array1, Array2) # Method call and result
 
                 else:
@@ -487,7 +487,7 @@ while(index == 1):
             elif Option == 2:
                 if len(Array1) == len(Array2) and len(Array1[0]) == len(Array2[0]):
                     print("\n----- SUBSTRACTION -----")
-                    objArraySubs = ArraySubstracion(Array1, Array2) # Creation of an object from the class "ArraySubstraction"
+                    objArraySubs = ArraySubstracion() # Creation of an object from the class "ArraySubstraction"
                     Array3 = objArraySubs.ArraySubstracionOp(Array1, Array2) # Method call and result
                 
                 else:
@@ -500,7 +500,7 @@ while(index == 1):
             # Option to calculate the "Multiplication" of 2 arrays
             elif Option == 3:
                 print("\n----- MULTIPLICATION -----")
-                objArrayMult = ArrayMultiplication(Array1, Array2) # Creation of an object from the class "ArrayMultiplication"
+                objArrayMult = ArrayMultiplication() # Creation of an object from the class "ArrayMultiplication"
                 Array3 = objArrayMult.ArrayMultiplicationOp(Array1, Array2) # Method call and result
 
                 print("\nPress any Key to return to the Operations with Arrays Menu...")
@@ -516,7 +516,7 @@ while(index == 1):
                     print("\n----- MULTIPLICATION OF AN ARRAY WITH SCALAR -----")
                     Scalar = int(input("Please, insert the value for the scalar: "))
 
-                    objArrayMultScalar = ArrayMultScalar(Array1, Scalar) # Creation of an object from the class "ArrayMultScalar"
+                    objArrayMultScalar = ArrayMultScalar() # Creation of an object from the class "ArrayMultScalar"
                     Array3 = objArrayMultScalar.ArrayMultScalarOp(Array1, Scalar) # Method call and result
 
                 # If the option is 2
@@ -524,7 +524,7 @@ while(index == 1):
                     print("\n----- MULTIPLICATION OF AN ARRAY WITH SCALAR -----")
                     Scalar = int(input("Please, insert the value for the scalar: "))
 
-                    objArrayMultScalar = ArrayMultScalar(Array2, Scalar) # Creation of an object from the class "ArrayMultScalar"
+                    objArrayMultScalar = ArrayMultScalar() # Creation of an object from the class "ArrayMultScalar"
                     Array3 = objArrayMultScalar.ArrayMultScalarOp(Array2, Scalar) # Method call and result
                 
                 else:
@@ -541,13 +541,13 @@ while(index == 1):
                 # If the option is 1
                 if Option == 1:
                     print("\n----- TRANSPOSE -----")
-                    objArrayTranspose = ArrayTransposed(Array1) # Creation of an object from the class "ArrayTransposed"
+                    objArrayTranspose = ArrayTransposed() # Creation of an object from the class "ArrayTransposed"
                     Array3 = objArrayTranspose.ArrayTransposedOp(Array1) # Method call and result
 
                 # If the option is 2
                 elif Option == 2:
                     print("\n----- TRANSPOSE -----")
-                    objArrayTranspose = ArrayTransposed(Array2) # Creation of an object from the class "ArrayTransposed"
+                    objArrayTranspose = ArrayTransposed() # Creation of an object from the class "ArrayTransposed"
                     Array3 = objArrayTranspose.ArrayTransposedOp(Array2) # Method call and result
                 
                 else:

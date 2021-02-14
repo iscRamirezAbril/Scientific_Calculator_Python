@@ -2,9 +2,9 @@
 # ----- Libraries  ----- #
 # ---------------------- #
 import math
-import os
-import sys
-import msvcrt
+import os # "Various Operating System Interfaces" Consists mainly of functions for creating and managing running processes or file system content (files and directories).
+import sys # System-specific parameters and functions
+import msvcrt # Library will help to detect a key
                                     # --------------------------------- #
                                     # ----- Basic Math Functions  ----- #
                                     # --------------------------------- #
@@ -12,9 +12,9 @@ import msvcrt
 # Creation of a class called "Addition"
 class Addition():
     # Class constructor
-    def __init__(self, Num1, Num2):
-        self.Num1 = Num1
-        self.Num2 = Num2
+    # def __init__(self, Num1, Num2):
+    #     self.Num1 = Num1
+    #     self.Num2 = Num2
 
     # Class method
     def AddOp(self, Num1, Num2):
@@ -25,9 +25,9 @@ class Addition():
 # Creation of a class called "Substraction"
 class Substraction():
     # Class constructor
-    def __init__(self, Num1, Num2):
-        self.Num1 = Num1
-        self.Num2 = Num2
+    # def __init__(self, Num1, Num2):
+    #     self.Num1 = Num1
+    #     self.Num2 = Num2
     
     # Class method
     def SubsOp(self, Num1, Num2):
@@ -38,9 +38,9 @@ class Substraction():
 # Creation of a class called "Multiplication"
 class Multiplication():
     # Class constructor
-    def __init__(self, Num1, Num2):
-        self.Num1 = Num1
-        self.Num2 = Num2
+    # def __init__(self, Num1, Num2):
+    #     self.Num1 = Num1
+    #     self.Num2 = Num2
     
     # Class method
     def MultOp(self, Num1, Num2):
@@ -51,9 +51,9 @@ class Multiplication():
 # Creation of a class called "Division"
 class Division():
     # Class constructor
-    def __init__(self, Num1, Num2):
-        self.Num1 = Num1
-        self.Num2 = Num2
+    # def __init__(self, Num1, Num2):
+    #     self.Num1 = Num1
+    #     self.Num2 = Num2
     
     # Class method
     def DivOp(self, Num1, Num2):
@@ -64,8 +64,8 @@ class Division():
 # Creation of a class called "Square_Root"
 class Square_Root():
     # Class constructor
-    def __init__(self, Num1):
-        self.Num1 = Num1
+    # def __init__(self, Num1):
+    #     self.Num1 = Num1
 
     # Class method
     def SquRootOp(self, Num1):
@@ -83,8 +83,8 @@ class Square_Root():
 # Creation of a class called "Cube_Root"
 class Cube_Root():
     # Class constructor
-    def __init__(self, Num1):
-        self.Num1 = Num1
+    # def __init__(self, Num1):
+    #     self.Num1 = Num1
 
     # Class method
     def CubeRootOp(self, Num1):
@@ -98,8 +98,8 @@ class Cube_Root():
 # Creation of a class called "Num_Squr"
 class Num_Squr():
     # Class constructor
-    def __init__(self, Num1):
-        self.Num1 = Num1
+    # def __init__(self, Num1):
+    #     self.Num1 = Num1
     
     # Class method
     def NumSqurOp(self, Num1):
@@ -110,8 +110,8 @@ class Num_Squr():
 # Creation of a class called "Num_Cubed"
 class Num_Cubed():
     # Class constructor
-    def __init__(self, Num1):
-        self.Num1 = Num1
+    # def __init__(self, Num1):
+    #     self.Num1 = Num1
     
     # Class method
     def NumCubedOp(self, Num1):
@@ -122,9 +122,9 @@ class Num_Cubed():
 # Creation of a class called "Num_Raised"
 class Num_Raisedx():
     # Class constructor
-    def __init__(self, Num1, Num2):
-        self.Num1 = Num1
-        self.Num2 = Num2
+    # def __init__(self, Num1, Num2):
+    #     self.Num1 = Num1
+    #     self.Num2 = Num2
     
     # Class method
     def NumRaisedXOp(self, Num1, Num2):
@@ -135,8 +135,8 @@ class Num_Raisedx():
 # Creation of a class called "Num_Neg1"
 class Num_Neg1():
     # Class constructor
-    def __init__(self, Num1):
-        self.Num1 = Num1
+    # def __init__(self, Num1):
+    #     self.Num1 = Num1
     
     # Class method
     def NumNeg1Op(self, Num1):
@@ -147,8 +147,8 @@ class Num_Neg1():
 # Creation of a class called "Num_Neg1"
 class Percentage():
     # Class constructor
-    def __init__(self, Num1):
-        self.Num1 = Num1
+    # def __init__(self, Num1):
+    #     self.Num1 = Num1
     
     # Class method
     def PercentageOp(self, Num1):
@@ -159,8 +159,8 @@ class Percentage():
 # Creation of a class called "Factorial"
 class Factorial():
     # Class constructor
-    def __init__(self, Num1):
-        self.Num1 = Num1
+    # def __init__(self, Num1):
+    #     self.Num1 = Num1
 
     # Class method
     def FactorialOp(self, Num1):
@@ -173,8 +173,8 @@ class Factorial():
 # Creation of a class called "Logarithm"
 class Logarithm():
     # Class constructor
-    def __init__(self, Num1):
-        self.Num1 = Num1
+    # def __init__(self, Num1):
+    #     self.Num1 = Num1
 
     # Class method
     def LogarithmOp(self, Num1):
@@ -188,8 +188,8 @@ class Logarithm():
 # Creation of a class called "Natural Logarithm"
 class Natural_Logarithm():
     # Class constructor
-    def __init__(self, Num1):
-        self.Num1 = Num1
+    # def __init__(self, Num1):
+    #     self.Num1 = Num1
 
     # Class method
     def NaturalLogarithmOp(self, Num1):
@@ -206,8 +206,8 @@ class Natural_Logarithm():
 # Creation of a class called "Sine"
 class Sine():
     # Class constructor
-    def __init__(self, Num1):
-        self.Num1 = Num1
+    # def __init__(self, Num1):
+    #     self.Num1 = Num1
 
     # Class method
     def SineOp(self, Num1):
@@ -234,8 +234,8 @@ class Sine():
 # Creation of a class called "Cosine"
 class Cosine():
     # Class constructor
-    def __init__(self, Num1):
-        self.Num1 = Num1
+    # def __init__(self, Num1):
+    #     self.Num1 = Num1
 
     # Class method
     def CosineOp(self, Num1):
@@ -262,8 +262,8 @@ class Cosine():
 # Creation of a class called "Sineh"
 class Sineh():
     # Class constructor
-    def __init__(self, Num1):
-        self.Num1 = Num1
+    # def __init__(self, Num1):
+    #     self.Num1 = Num1
     
     # Class method
     def SinehOp(self, Num1):
@@ -285,8 +285,8 @@ class Sineh():
 # Creation of a class called "Cosineh"
 class Cosineh():
     # Class constructor
-    def __init__(self, Num1):
-        self.Num1 = Num1
+    # def __init__(self, Num1):
+    #     self.Num1 = Num1
     
     # Class method
     def CosinehOp(self, Num1):
@@ -311,11 +311,11 @@ class Cosineh():
 # Creation of a class called "Array_Addition"
 class CaptureArrays():
     # Class constructor
-    def __init__(self, n1, m1, n2, m2):
-        self.n1 = n1
-        self.m1 = m1
-        self.n2 = n2
-        self.m2 = m2
+    # def __init__(self, n1, m1, n2, m2):
+    #     self.n1 = n1
+    #     self.m1 = m1
+    #     self.n2 = n2
+    #     self.m2 = m2
     
     # Class method #1
     def createArray1(self, n1, m1):
@@ -365,9 +365,9 @@ class CaptureArrays():
 # Creation of a class called "ArrayAddition"
 class ArrayAddition():
     # Class constructor
-    def __init__(self, Array1, Array2):
-        self.Array1 = Array1
-        self.Array2 = Array2
+    # def __init__(self, Array1, Array2):
+    #     self.Array1 = Array1
+    #     self.Array2 = Array2
 
     # Class method
     def ArrayAdditionOp(self, Array1, Array2):
@@ -391,9 +391,9 @@ class ArrayAddition():
 # Creation of a class called "ArraySubstracion"
 class ArraySubstracion():
     # Class constructor
-    def __init__(self, Array1, Array2):
-        self.Array1 = Array1
-        self.Array2 = Array2
+    # def __init__(self, Array1, Array2):
+    #     self.Array1 = Array1
+    #     self.Array2 = Array2
     
     # Class method
     def ArraySubstracionOp(self, Array1, Array2):
@@ -417,9 +417,9 @@ class ArraySubstracion():
 # Creation of a class called "ArrayMultiplication"
 class ArrayMultiplication():
     # Class constructor
-    def __init__(self, Array1, Array2):
-        self.Array1 = Array1
-        self.Array2 = Array2
+    # def __init__(self, Array1, Array2):
+    #     self.Array1 = Array1
+    #     self.Array2 = Array2
     
     # Class method
     def ArrayMultiplicationOp(self, Array1, Array2):
@@ -449,9 +449,9 @@ class ArrayMultiplication():
 # Creation of a class called "ArrayMultScalar"
 class ArrayMultScalar():
     # Class constructor
-    def __init__(self, Array, Scalar):
-        self.Array = Array
-        self.Scalar = Scalar
+    # def __init__(self, Array, Scalar):
+    #     self.Array = Array
+    #     self.Scalar = Scalar
     
     # Class method
     def ArrayMultScalarOp(self, Array, Scalar):
@@ -476,8 +476,8 @@ class ArrayMultScalar():
 # Creation of a class called "ArrayTransposed"
 class ArrayTransposed():
     # Class constructor
-    def __init__(self, Array):
-        self.Array = Array
+    # def __init__(self, Array):
+    #     self.Array = Array
     
     # Class method
     def ArrayTransposedOp(self, Array):
@@ -504,5 +504,5 @@ class ArrayTransposed():
 # ------------------------------------------------------------------------------------------------------------ #
 def ReadKey():
     print("\nPress any Key to return to the previos Menu...")
-    msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+    msvcrt.getwch() # Press a key before returning to the previos Menu
     os.system("cls") # Clear the window                           
