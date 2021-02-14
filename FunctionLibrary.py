@@ -1,4 +1,10 @@
+# ---------------------- #
+# ----- Libraries  ----- #
+# ---------------------- #
 import math
+import os
+import sys
+import msvcrt
                                     # --------------------------------- #
                                     # ----- Basic Math Functions  ----- #
                                     # --------------------------------- #
@@ -372,7 +378,7 @@ class ArrayAddition():
             for j in range(len(Array1[0])):
                 Array3[i].append(Array1[i][j] + Array2[i][j])
         
-        print("The result of the addition for the Array 1 and 2 is: ")
+        print("\nThe result of the addition for the Array 1 and 2 is: ")
         for row in Array3:
             print("[", end = " ")
             for element in row:
@@ -398,7 +404,7 @@ class ArraySubstracion():
             for j in range(len(Array1[0])):
                 Array3[i].append(Array1[i][j] - Array2[i][j])
         
-        print("The result of the substraction for the Array 1 and 2 is: ")
+        print("\nThe result of the substraction for the Array 1 and 2 is: ")
         for row in Array3:
             print("[", end = " ")
             for element in row:
@@ -422,7 +428,7 @@ class ArrayMultiplication():
         # Creation of an array of ceros
         for i in range(len(Array1)):
             Array3.append([])
-            for j in range(len(Array1[0])):
+            for j in range(len(Array2[0])):
                 Array3[i].append(0)
 
         for i in range(len(Array1)):
@@ -430,7 +436,7 @@ class ArrayMultiplication():
                 for k in range(len(Array1[0])):
                     Array3[i][j] += Array1[i][k] * Array2[k][j]
         
-        print("The result of the multiplication for the Array 1 and 2 is: ")
+        print("\nThe result of the multiplication for the Array 1 and 2 is: ")
         for row in Array3:
             print("[", end = " ")
             for element in row:
@@ -491,3 +497,12 @@ class ArrayTransposed():
             print("]")
 
         return Array3 # Value returned
+
+                                # ---------------------------- #
+                                # ----- Other funcrions  ----- #
+                                # ---------------------------- #
+# ------------------------------------------------------------------------------------------------------------ #
+def ReadKey():
+    print("\nPress any Key to return to the previos Menu...")
+    msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
+    os.system("cls") # Clear the window                           

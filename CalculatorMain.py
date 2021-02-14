@@ -40,9 +40,7 @@ while(index == 1):
                 AddResult = objAdd.AddOp(Num1, Num2) # Method call
                 print("\nTHE ANSWER OF THE ADDITION IS: " + str(AddResult)) # Result
 
-                print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
-                os.system("cls") # Clear the window
+                ReadKey() # Method for returning to the Basic Math Functions Menu
 
             # Option for "Substraction" function
             elif Option == 2:
@@ -52,9 +50,7 @@ while(index == 1):
                 SubsResult = objSubs.SubsOp(Num1, Num2) # Method call
                 print("\nTHE ANSWER OF THE SUBSTRACTION IS: " + str(SubsResult)) # Result
 
-                print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
-                os.system("cls") # Clear the window
+                ReadKey() # Method for returning to the Basic Math Functions Menu
 
             # Option for "Multiplication" function
             elif Option == 3:
@@ -64,9 +60,7 @@ while(index == 1):
                 MultResult = objMult.MultOp(Num1, Num2) # Method call
                 print("\nTHE ANSWER OF THE MULTIPLICATION IS: " + str(MultResult)) # Result
 
-                print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
-                os.system("cls") # Clear the window
+                ReadKey() # Method for returning to the Basic Math Functions Menu
 
             # Option for "Division" function
             elif Option == 4:
@@ -75,17 +69,13 @@ while(index == 1):
 
                 if Num2 == 0:
                     print("\nMATH ERROR!...")
-                    print("\nPress any Key to return to the Basic Math Functions...")
-                    msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
-                    os.system("cls") # Clear the window
+                    ReadKey() # Method for returning to the Basic Math Functions Menu
                 else:
                     objDiv = Division(Num1, Num2) # Creation of an object from the class "Division"
                     DivResult = objDiv.DivOp(Num1, Num2) # Method call
                     print("\nTHE ANSWER OF THE DIVIISON IS: " + str(DivResult)) # Result
-
-                    print("\nPress any Key to return to the Basic Math Functions...")
-                    msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
-                    os.system("cls") # Clear the window
+                    
+                    ReadKey() # Method for returning to the Basic Math Functions Menu
 
             # Option for "Square Root" function
             elif Option == 5:
@@ -93,17 +83,13 @@ while(index == 1):
 
                 if Num1 < 0:
                     print("\nMATH ERROR!...")
-                    print("\nPress any Key to return to the Basic Math Functions...")
-                    msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
-                    os.system("cls") # Clear the window
+                    ReadKey() # Method for returning to the Basic Math Functions Menu
                 else:
                     objSqrRoot = Square_Root(Num1) # Creation of an object from the class "Square_Root"
                     SqrRootResult = objSqrRoot.SquRootOp(Num1) # Method call
                     print("\nTHE ANSWER OF THE SQUARE ROOT IS: " + str(SqrRootResult)) # Result
 
-                    print("\nPress any Key to return to the Basic Math Functions...")
-                    msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
-                    os.system("cls") # Clear the window
+                    ReadKey() # Method for returning to the Basic Math Functions Menu
 
             # Option for "Cube Root" function
             elif Option == 6:
@@ -113,9 +99,7 @@ while(index == 1):
                 CubeRootResult = objCubeRoot.CubeRootOp(Num1) # Method call
                 print("\nTHE ANSWER OF THE CUBE ROOT IS: " + str(CubeRootResult)) # Result
 
-                print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the Basic Math Functions Menu
-                os.system("cls") # Clear the window
+                ReadKey() # Method for returning to the Basic Math Functions Menu
 
             # Option to return to the main menu
             elif Option == 7:
@@ -149,9 +133,7 @@ while(index == 1):
                 NumSqurResult = objNumSqu.NumSqurOp(Num1) # Method call
                 print("\nTHE SQUARE OF THE NUMBER IS: " + str(NumSqurResult)) # Result
 
-                print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                os.system("cls") # Clear the window
+                ReadKey() # Method for returning to the More Math Functions Menu
 
             # Option for "Cube of a number" operation
             elif Option == 2:
@@ -161,9 +143,7 @@ while(index == 1):
                 NumSqurResult = objNumCube.NumCubedOp(Num1) # Method call
                 print("\nTHE CUBE OF THE NUMBER IS: " + str(NumSqurResult)) # Result
 
-                print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                os.system("cls") # Clear the window
+                ReadKey() # Method for returning to the More Math Functions Menu
 
             # Option for "Number Raised to x power" operation   
             elif Option == 3:
@@ -174,9 +154,7 @@ while(index == 1):
                 NumRaisedXResult = objNumRaisedX.NumRaisedXOp(Num1, Num2) # Method call
                 print("\nTHE ANSWER IS: " + str(NumRaisedXResult)) # Result
 
-                print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                os.system("cls") # Clear the window
+                ReadKey() # Method for returning to the More Math Functions Menu
 
             # Option for "Number Raised to -1 power" operation
             elif Option == 4:
@@ -186,9 +164,7 @@ while(index == 1):
                 NumNeg1Result = objNumNeg1.NumNeg1Op(Num1) # Method call
                 print("\nTHE ANSWER IS: " + str(NumNeg1Result)) # Result
 
-                print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                os.system("cls") # Clear the window
+                ReadKey() # Method for returning to the More Math Functions Menu
 
             # Option for "Percentage of a number" operation
             elif Option == 5:
@@ -198,9 +174,7 @@ while(index == 1):
                 PercentageResult = objPercentage.PercentageOp(Num1) # Method call
                 print("\nTHE PERCENTAGE IS: " + str(PercentageResult)) # Result
 
-                print("\nPress any Key to return to the Basic Math Functions...")
-                msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                os.system("cls") # Clear the window
+                ReadKey() # Method for returning to the More Math Functions Menu
 
             # Option to calculate the "Factorial"
             elif Option == 6:
@@ -208,17 +182,13 @@ while(index == 1):
 
                 if Num1 == 1:
                     print("\nTHE FACTORIAL IS: 1") # Result
-                    print("\nPress any Key to return to the Basic Math Functions...")
-                    msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                    os.system("cls") # Clear the window
+                    ReadKey() # Method for returning to the More Math Functions Menu
                 else:
                     objFactorial = Factorial(Num1) # Creation of an object from the class "Factorial"
                     FactorialResult = objFactorial.FactorialOp(Num1) # Method call
                     print("\nTHE FACTORIAL IS: " + str(FactorialResult)) # Result
 
-                    print("\nPress any Key to return to the Basic Math Functions...")
-                    msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                    os.system("cls") # Clear the window
+                    ReadKey() # Method for returning to the More Math Functions Menu
 
             # Option to calculate the "Logarithm"
             elif Option == 7:
@@ -226,17 +196,13 @@ while(index == 1):
 
                 if Num1 <= 0:
                     print("\nMATH ERROR!...")
-                    print("\nPress any Key to return to the Basic Math Functions...")
-                    msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                    os.system("cls") # Clear the window
+                    ReadKey() # Method for returning to the More Math Functions Menu
                 else:
                     objLogarithm = Logarithm(Num1) # Creation of an object from the class "Logarithm"
                     LogarithmResult = objLogarithm.LogarithmOp(Num1) # Method call
                     print("\nTHE LOGARITHM IS: " + str(LogarithmResult)) # Result
 
-                    print("\nPress any Key to return to the Basic Math Functions...")
-                    msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                    os.system("cls") # Clear the window
+                    ReadKey() # Method for returning to the More Math Functions Menu
 
             # Option to calculate the "Natural Logarithm"
             elif Option == 8:
@@ -244,17 +210,13 @@ while(index == 1):
 
                 if Num1 <= 0:
                     print("\nMATH ERROR!...")
-                    print("\nPress any Key to return to the Basic Math Functions...")
-                    msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                    os.system("cls") # Clear the window
+                    ReadKey() # Method for returning to the More Math Functions Menu
                 else:
                     objNatLogarithm = Natural_Logarithm(Num1) # Creation of an object from the class "Natural_Logarithm"
                     NaturalLogarithmResult = objNatLogarithm.NaturalLogarithmOp(Num1) # Method call
                     print("\nTHE NATURAL LOGARITHM IS: " + str(NaturalLogarithmResult)) # Result
 
-                    print("\nPress any Key to return to the Basic Math Functions...")
-                    msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                    os.system("cls") # Clear the window
+                    ReadKey() # Method for returning to the More Math Functions Menu
 
             # Option to return to the Main Menu
             elif Option == 9:
@@ -299,9 +261,7 @@ while(index == 1):
                         SineResult = objSine.SineOp(Num1) # Method call
                         print("\nTHE SINE [IN RADIANS] IS: " + str(SineResult)) # Result
 
-                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
-                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                        os.system("cls") # Clear the window
+                        ReadKey() # Method for returning to the Basic Trigonometric Functions Menu
 
                     # Option to calculate the "Cosine(x)" of a number
                     elif Option == 2:
@@ -311,9 +271,7 @@ while(index == 1):
                         CosineResult = objCosine.CosineOp(Num1) # Method call
                         print("\nTHE COSINE [IN RADIANS] IS: " + str(CosineResult)) # Result
 
-                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
-                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                        os.system("cls") # Clear the window
+                        ReadKey() # Method for returning to the Basic Trigonometric Functions Menu
 
                     # Option to calculate the "Tangent(x)" of a number
                     elif Option == 3:
@@ -325,9 +283,7 @@ while(index == 1):
                         TangentResult = objSine.SineOp(Num1) / objCosine.CosineOp(Num1) # Method call
                         print("\nTHE TANGENT [IN RADIANS] IS: " + str(TangentResult)) # Result
 
-                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
-                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                        os.system("cls") # Clear the window
+                        ReadKey() # Method for returning to the Basic Trigonometric Functions Menu
 
                     # Option to calculate the "Secant(x)" of a number
                     elif Option == 4:
@@ -339,9 +295,7 @@ while(index == 1):
                         SecantResult = objSine.SineOp(Num1) / objCosine.CosineOp(Num1) # Method call
                         print("\nTHE SECANT [IN RADIANS] IS: " + str(SecantResult)) # Result
 
-                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
-                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                        os.system("cls") # Clear the window
+                        ReadKey() # Method for returning to the Basic Trigonometric Functions Menu
 
                     # Option to calculate the "Cosecant(x)" of a number
                     elif Option == 5:
@@ -354,9 +308,7 @@ while(index == 1):
                         CosecantResult = CotangentResult / objCosine.CosineOp(Num1)
                         print("\nTHE COSECANT [IN RADIANS] IS: " + str(CosecantResult)) # Result
 
-                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
-                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                        os.system("cls") # Clear the window
+                        ReadKey() # Method for returning to the Basic Trigonometric Functions Menu
 
                     # Option to calculate the "Cotangent(x)" of a number
                     elif Option == 6:
@@ -369,9 +321,7 @@ while(index == 1):
 
                         print("\nTHE COTANGENT [IN RADIANS] IS: " + str(CotangentResult)) # Result
 
-                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
-                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                        os.system("cls") # Clear the window
+                        ReadKey() # Method for returning to the Basic Trigonometric Functions Menu
 
                     # Option to return to the Main Menu
                     elif Option == 7:
@@ -407,9 +357,7 @@ while(index == 1):
 
                         print("\nTHE HIPERBOLIC SINE [IN DEGREES] IS: " + str(SinehResult)) # Result
 
-                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
-                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                        os.system("cls") # Clear the window
+                        ReadKey() # Method for returning to the Hiperbolic Trigonometric Functions Menu
 
                    # Option to calculate the "Cosineh(x)" of a number
                     elif Option == 2:
@@ -421,9 +369,7 @@ while(index == 1):
 
                         print("\nTHE HIPERBOLIC COSINE [IN DEGREES] IS: " + str(CosinehResult)) # Result
 
-                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
-                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                        os.system("cls") # Clear the window
+                        ReadKey() # Method for returning to the Hiperbolic Trigonometric Functions Menu
 
                    # Option to calculate the "Tangenth(x)" of a number
                     elif Option == 3:
@@ -436,9 +382,7 @@ while(index == 1):
 
                         print("\nTHE HIPERBOLIC TANGENT [IN DEGREES] IS: " + str(TangenthResult)) # Result
 
-                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
-                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                        os.system("cls") # Clear the window
+                        ReadKey() # Method for returning to the Hiperbolic Trigonometric Functions Menu
 
                     # Option to calculate the "Cosecanth(x)" of a number
                     elif Option == 4:
@@ -450,9 +394,7 @@ while(index == 1):
 
                         print("\nTHE HIPERBOLIC COSECANT [IN DEGREES] IS: " + str(CosecanthResult)) # Result
 
-                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
-                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                        os.system("cls") # Clear the window
+                        ReadKey() # Method for returning to the Hiperbolic Trigonometric Functions Menu
 
                     # Option to calculate the "Secanth(x)" of a number
                     elif Option == 5:
@@ -464,9 +406,7 @@ while(index == 1):
 
                         print("\nTHE HIPERBOLIC SECANT [IN DEGREES] IS: " + str(SecanthResult)) # Result
 
-                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
-                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                        os.system("cls") # Clear the window
+                        ReadKey() # Method for returning to the Hiperbolic Trigonometric Functions Menu
 
                     # Option to calculate the "Cotangenth(x)" of a number
                     elif Option == 6:
@@ -480,9 +420,7 @@ while(index == 1):
 
                         print("\nTHE HIPERBOLIC COTANGENT [IN DEGREES] IS: " + str(ContangenthResult)) # Result
 
-                        print("\nPress any Key to return to the Basic Trigonometric Functions...")
-                        msvcrt.getwch() # Press a key before returning to the More Math Functions Menu
-                        os.system("cls") # Clear the window
+                        ReadKey() # Method for returning to the Hiperbolic Trigonometric Functions Menu
 
                     # Option to return to the Main Menu
                     elif Option == 7:
