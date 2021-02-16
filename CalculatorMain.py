@@ -16,10 +16,11 @@ index = 1
 # -------------------------- #
 while(index == 1):
     os.system("cls") # Clear the window
-    print(Fore.CYAN + "=============================================================================================")
-    print(Fore.CYAN + "                     --- Welcome to the Scientific Calculator! :D ---                        ")
-    print(Fore.CYAN + "=============================================================================================")
-
+    print(Fore.YELLOW + "-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-")
+    print("")
+    print(Fore.YELLOW + "                     --- Welcome to the Scientific Calculator! :D ---                        ")
+    
+    print(Fore.YELLOW + "\n-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-")
     Option = int(input("This is the Principal Menu\n   1. Basic Math Functions\n   2. More Math Functions\n   3. Trigonometric Functions\n   4. Operations with Arrays\n   5. Exit\n\nPlease, select an option: "))
 
     # Option to enter to the "Basic Math Functions" menu
